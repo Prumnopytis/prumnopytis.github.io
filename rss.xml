@@ -4,8 +4,8 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Fri, 11 Jan 2019 18:38:05 NZDT</pubDate>
-    <lastBuildDate>Fri, 11 Jan 2019 18:38:05 NZDT</lastBuildDate>
+    <pubDate>Fri, 11 Jan 2019 18:46:09 NZDT</pubDate>
+    <lastBuildDate>Fri, 11 Jan 2019 18:46:09 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -14,6 +14,13 @@
       <description><![CDATA[Everything has now worked at least once]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</guid>
+    </item>
+    <item>
+      <title>Bird photos</title>
+      <link>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</link>
+      <description><![CDATA[Bird photography.]]></description>
+      <pubDate>2019-01-11</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</guid>
     </item>
     <item>
       <title>ash</title>

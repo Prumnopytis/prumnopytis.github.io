@@ -1,0 +1,11 @@
+#+TITLE:       Hello world
+#+AUTHOR:      jake
+#+EMAIL:       jake@localhost.localdomain
+#+DATE:        2019-01-11 Fri
+#+URI:         /blog/%y/%m/%d/hello-world
+#+KEYWORDS:    <TODO: insert your keywords here>
+#+TAGS:        <TODO: insert your tags here>
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Hello world post
+* TODO Hello world post

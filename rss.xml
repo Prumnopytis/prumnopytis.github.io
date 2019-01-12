@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Fri, 11 Jan 2019 18:51:57 NZDT</pubDate>
-    <lastBuildDate>Fri, 11 Jan 2019 18:51:57 NZDT</lastBuildDate>
+    <pubDate>Sat, 12 Jan 2019 14:16:16 NZDT</pubDate>
+    <lastBuildDate>Sat, 12 Jan 2019 14:16:16 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Silvereye</title>
+      <link>https://prumnopytis.github.io/blog/2019/01/12/silvereye</link>
+      <description><![CDATA[A photo of a silvereye]]></description>
+      <pubDate>2019-01-12</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/01/12/silvereye</guid>
+    </item>
     <item>
       <title>Started an org-page blog with Github pages</title>
       <link>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</link>

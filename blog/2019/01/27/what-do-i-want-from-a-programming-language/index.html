@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>What do I want from a programming language? - Prumnopytis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="jake" />
+    <meta name="description" content="Rumination on language choice" />
+    <meta name="keywords" content="language-choice" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Prumnopytis</a></h1>
+        <p>Prumnopytis</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/Prumnopytis">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="prumnopytis.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>What do I want from a programming language?</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Language attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Performance</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Community</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Learning curve</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Platform</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Paradigm</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Writability</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Technologies</td>
+</tr>
+</tbody>
+</table>
+<p>
+are on my mind.
+</p>
+
+<div id="outline-container-orgc279f99" class="outline-2">
+<h2 id="orgc279f99">Python</h2>
+<div class="outline-text-2" id="text-orgc279f99">
+<p>
+has a tremendously low entry level
+</p>
+</div>
+<div id="outline-container-org3de0584" class="outline-3">
+<h3 id="org3de0584">Traumatic backstory</h3>
+<div class="outline-text-3" id="text-org3de0584">
+<p>
+, though the lack of entry level contributed to me reviewing this in a professional context:
+</p>
+<pre class="example">
+file = open("data.json", 'r')
+lines = file.readlines()
+
+for i in range(len(lines)):
+    "The culprit was trying to change one value in a small json."
+</pre>
+
+<p>
+I guess I shouldn't shoot Python for being the messenger there.
+</p>
+</div>
+
+<div id="outline-container-orgdfb27b2" class="outline-4">
+<h4 id="orgdfb27b2">For posterity</h4>
+<div class="outline-text-4" id="text-orgdfb27b2">
+<p>
+Try
+</p>
+<pre class="example">
+import json
+with open("data.json", 'r') as datafile:
+    mydict = json.load(datafile)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcc09b4a" class="outline-3">
+<h3 id="orgcc09b4a">What is a medium sized problem?</h3>
+<div class="outline-text-3" id="text-orgcc09b4a">
+<p>
+I went to a lecture about Matlab style linear indexing in a language called Q.
+</p>
+
+<p>
+The presenter talked about how well written Q's performance was sufficient for what he called medium sized problems.
+</p>
+
+<p>
+I guess he meant problems that were not performance critical but did need to finish eventually.
+</p>
+
+<p>
+For medium sized problems, read- and write-ability of modestly performant solutions are top goals.
+</p>
+
+<p>
+Similarly, a really fast program that gets written too late was not fast enough.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2dd0122" class="outline-3">
+<h3 id="org2dd0122">High performance looks weird</h3>
+<div class="outline-text-3" id="text-org2dd0122">
+<p>
+For an embarrassingly parallel problem (in which no part of the solution is contingent on another part of the solution finishing first), considerations become like mean distance to memory accesses.
+</p>
+
+<p>
+Technologies for especially non-graphics-card high performance become considerations of message passing.
+</p>
+
+<p>
+Apache Spark exposing Hadoop in R is high performance in that it is familiar to write,  <a href="https://spark.apache.org/docs/2.0.2/api/R/gapply.html">multithreading</a>.
+</p>
+
+<pre class="example">
+## S4 method for signature 'SparkDataFrame'
+gapply(x, cols, func, schema)
+</pre>
+</div>
+
+<div id="outline-container-org9f0a2e9" class="outline-4">
+<h4 id="org9f0a2e9">Aside, hadoop in python</h4>
+<div class="outline-text-4" id="text-org9f0a2e9">
+<p>
+Benchmarks about twice as slow as in hadoop's native java. Piling on the Python-is-slow bandwagon.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1fb439c" class="outline-2">
+<h2 id="org1fb439c">Unexpected conclusion</h2>
+<div class="outline-text-2" id="text-org1fb439c">
+<p>
+Listening to myself speak, it sounds like I like <a href="https://spark.apache.org/">Spark</a>, <a href="https://www.open-mpi.org/">openMPI</a> and probably <a href="https://www.khronos.org/opencl/">opencl</a> (or my dear cuda c ..).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org05c6711" class="outline-2">
+<h2 id="org05c6711">Trying to get to my expected conclusion</h2>
+<div class="outline-text-2" id="text-org05c6711">
+<p>
+Thinking about my physics and mathematics professors, the low level language <a href="http://indy.cs.concordia.ca/auto/">present</a> really was Fortran for playing with differential equations.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org546f770" class="outline-2">
+<h2 id="org546f770">Bringing up Alan Kay</h2>
+<div class="outline-text-2" id="text-org546f770">
+<p>
+I like to think about <a href="https://www.youtube.com/watch?v=oKg1hTOQXoY">Alan Kay's thinking about 1997 - 2022</a>. 
+</p>
+
+<p>
+He points out that the fanning out of generations of cells in embrionic biology, and the blindingly fast movement-relative-to-size molecule motion of chemistry are not present in computing.
+</p>
+
+<p>
+Well other than what I mentioned already we have work on fault-tolerant scatter and gather paradigms,
+</p>
+
+<p>
+Cuda GPUs that dispatch novel kernels to other cuda GPUs, the Nvidia docker,
+</p>
+
+<p>
+Kubernetes, Kafka, 
+</p>
+
+<p>
+gcp, aws,
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f6dfb6" class="outline-2">
+<h2 id="org5f6dfb6">What languages are those?</h2>
+<div class="outline-text-2" id="text-org5f6dfb6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">OpenMPI:</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">C</td>
+<td class="org-left">C++</td>
+<td class="org-left">Fortran</td>
+</tr>
+
+<tr>
+<td class="org-left">Cuda:</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Python</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">C++</td>
+<td class="org-left">Fortran</td>
+</tr>
+
+<tr>
+<td class="org-left">Kafka:</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Dotnet</td>
+<td class="org-left">Java</td>
+<td class="org-left">Python</td>
+<td class="org-left">Go</td>
+<td class="org-left">C</td>
+<td class="org-left">C++</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">K8s:</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Javascript</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Dotnet</td>
+<td class="org-left">Java</td>
+<td class="org-left">Python</td>
+<td class="org-left">Go</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Spark</td>
+<td class="org-left">R</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Scala</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Java</td>
+<td class="org-left">Python</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">gcp/aws/lish:</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Shell</td>
+<td class="org-left">terraform</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org96bda4c" class="outline-2">
+<h2 id="org96bda4c">Lisps</h2>
+<div class="outline-text-2" id="text-org96bda4c">
+<p>
+I use elisp for Emacs wizardry. The best programmer I know thinks clojure (a lisp on a JVM) is the future.
+</p>
+
+<p>
+Clisp feels like it has something to teach me (I need to put some miles in before getting back into The Art of the Metaobject Protocol).
+</p>
+
+<p>
+Scheme is the cool lisp.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaba4cb7" class="outline-2">
+<h2 id="orgaba4cb7">Other languages</h2>
+<div class="outline-text-2" id="text-orgaba4cb7">
+<p>
+I do not feel like a javascript programmer. I think scientific javascript was in vogue on the heels of scientific python, since it is an everything and the kitchen sink too language - and it is interpreted by popular web browsers.
+</p>
+
+<p>
+The LLVM Handbook was not a thrilling read. I went in wanting some insight into opt passes, and what I got was instructions on writing compilers / using LLVM as part of a toolchain, which I did not especially want.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd813f23" class="outline-2">
+<h2 id="orgd813f23">Schedulers, IDEs, libraries and tools</h2>
+<div class="outline-text-2" id="text-orgd813f23">
+<p>
+I love emacs, though I need to check the differences between emacs 27 and xemacs.
+</p>
+
+<p>
+Viz IDE, I will start using org-mode for my source as well.
+</p>
+
+<p>
+A few internet arguements have mostly convinced me git is more accident than genius (I say, here on github) compared to cvs (can you tell who likes openbsd).
+What does extensive support for non-head development and merging/rebasing really mean? After that, it's a backup and hosting tool?
+</p>
+
+<p>
+Slurm sounds like the name of something I should be using. I need more context to choose this kind of tool. I worked somewhere that fumbled around with Jenkins.
+Jails and saltstack?
+For familiarity, I normally bash a short lived gcp compute instance of the nature I want, or use linode.
+</p>
+
+<p>
+Pygame was my jump into game development. My game making mentor endorsed godot, and my reading around it suggests that is a good call. C# or its own LLVM fueled similar-to-python.
+</p>
+
+<p>
+Gmesh should probably be mentioned somewhere here.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2019-01-27</span>
+        <span title="last modification date" class="post-info">2019-01-27</span>
+        <span title="tags" class="post-info"><a href="/tags/programming/">programming</a></span>
+        <span title="author" class="post-info">jake</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2019/01/27/what-do-i-want-from-a-programming-language";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/01/27/what-do-i-want-from-a-programming-language";
+          var disqus_shortname = 'prumnopytis-github-io';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       <div id="hashover"></div>
+       <script type="text/javascript" src="/hashover.php"></script>
+       <noscript>You must have JavaScript enabled to use the comments.</noscript>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:jake &lt;at&gt; localhost &lt;dot&gt; localdomain">jake</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

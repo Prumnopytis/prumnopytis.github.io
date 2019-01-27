@@ -4,8 +4,8 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Sun, 27 Jan 2019 17:41:30 NZDT</pubDate>
-    <lastBuildDate>Sun, 27 Jan 2019 17:41:30 NZDT</lastBuildDate>
+    <pubDate>Sun, 27 Jan 2019 20:53:08 NZDT</pubDate>
+    <lastBuildDate>Sun, 27 Jan 2019 20:53:08 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -21,6 +21,13 @@
       <description><![CDATA[Expressing my dislike of Python]]></description>
       <pubDate>2019-01-27</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/27/dislike-python</guid>
+    </item>
+    <item>
+      <title>What do I want from a programming language?</title>
+      <link>https://prumnopytis.github.io/blog/2019/01/27/what-do-i-want-from-a-programming-language</link>
+      <description><![CDATA[Rumination on language choice]]></description>
+      <pubDate>2019-01-27</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/01/27/what-do-i-want-from-a-programming-language</guid>
     </item>
     <item>
       <title>Silvereye</title>

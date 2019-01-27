@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Bird photos - Prumnopytis</title>
+    <title>Emacs indent selection - Prumnopytis</title>
     <meta charset="utf-8" />
     <meta name="author" content="jake" />
-    <meta name="description" content="Bird photography." />
-    <meta name="keywords" content="bird photography" />
+    <meta name="description" content="A reminder on cool code folding for Python in Emacs" />
+    <meta name="keywords" content="Emacs, Coding, Indentation" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -31,18 +31,84 @@
 
 <div>
 <div class="post">
-<h1>Bird photos</h1>
-<div id="outline-container-org029d548" class="outline-2">
-<h2 id="org029d548">Photos of birds</h2>
+<h1>Emacs indent selection</h1>
+<div id="outline-container-org92f688a" class="outline-2">
+<h2 id="org92f688a">Code folding</h2>
+<div class="outline-text-2" id="text-org92f688a">
+<p>
+I am programming with Python pygame at the moment.
+</p>
+
+<p>
+Like many, I wondered about code folding a la vim.
+</p>
+
+<p>
+Without adding a minor mode, I am using
+</p>
+
+<pre class="example">
+M-&lt;n&gt; C-x $
+</pre>
+
+<p>
+, where &lt;n&gt; is one of 1, 5, 11 .. since I am using four space Python indentation. Selective display folds lines up to a certain leading indentation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6bd9a64" class="outline-2">
+<h2 id="org6bd9a64">Selective display</h2>
+<div class="outline-text-2" id="text-org6bd9a64">
+<pre class="example">
+C-x $ runs the command set-selective-display (found in global-map),
+which is an interactive compiled Lisp function in ‘simple.el’.
+
+It is bound to C-x $.
+
+(set-selective-display ARG)
+
+Set ‘selective-display’ to ARG; clear it if no arg.
+When the value of ‘selective-display’ is a number &gt; 0,
+lines whose indentation is &gt;= that value are not displayed.
+The variable ‘selective-display’ has a separate value for each buffer.
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org8da5cb8" class="outline-2">
+<h2 id="org8da5cb8">Style?</h2>
+<div class="outline-text-2" id="text-org8da5cb8">
+<p>
+Withstanding I use Emacs for its extensibility, I prefer a builtin that takes one arguement.
+</p>
+
+<p>
+It is kind of ugly to have to specify k * n + 1 with k levels of n space indentation. 
+</p>
+
+<p>
+Rather than applying a minor hack, my heart tells me the mistake here is Python.
+</p>
+</div>
+
+<div id="outline-container-org91a9175" class="outline-3">
+<h3 id="org91a9175">Honorable mention:</h3>
+<div class="outline-text-3" id="text-org91a9175">
+<pre class="example">
+M-x occur
+</pre>
+</div>
+</div>
 </div>
 
 </div>
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2019-01-11</span>
-        <span title="last modification date" class="post-info">2019-01-11</span>
-        <span title="tags" class="post-info"><a href="/tags/birds-photography/">birds photography</a></span>
+        <span title="post date" class="post-info">2019-01-27</span>
+        <span title="last modification date" class="post-info">2019-01-27</span>
+        <span title="tags" class="post-info"><a href="/tags/i/">I</a>, <a href="/tags/confused/">confused</a>, <a href="/tags/keywords/">keywords</a>, <a href="/tags/and/">and</a>, <a href="/tags/tags/">tags</a></span>
         <span title="author" class="post-info">jake</span>
       </div>
       <section>
@@ -50,8 +116,8 @@
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2019/01/11/bird-photos";
-          var disqus_url = "https://prumnopytis.github.io/blog/2019/01/11/bird-photos";
+          var disqus_identifier = "/blog/2019/01/27/emacs-indent-selection";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/01/27/emacs-indent-selection";
           var disqus_shortname = 'prumnopytis-github-io';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {

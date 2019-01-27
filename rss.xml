@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Sun, 27 Jan 2019 14:44:49 NZDT</pubDate>
-    <lastBuildDate>Sun, 27 Jan 2019 14:44:49 NZDT</lastBuildDate>
+    <pubDate>Sun, 27 Jan 2019 14:47:41 NZDT</pubDate>
+    <lastBuildDate>Sun, 27 Jan 2019 14:47:41 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Emacs indent selection</title>
+      <link>https://prumnopytis.github.io/blog/2019/01/27/emacs-indent-selection</link>
+      <description><![CDATA[A reminder on cool code folding for Python in Emacs]]></description>
+      <pubDate>2019-01-27</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/01/27/emacs-indent-selection</guid>
+    </item>
     <item>
       <title>Silvereye</title>
       <link>https://prumnopytis.github.io/blog/2019/01/12/silvereye</link>
@@ -18,28 +25,28 @@
     <item>
       <title>Started an org-page blog with Github pages</title>
       <link>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[Everything has now worked at least once]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</guid>
     </item>
     <item>
       <title>Bird photos</title>
       <link>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[Bird photography.]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</guid>
     </item>
     <item>
       <title>ash</title>
       <link>https://prumnopytis.github.io/blog/2019/01/11/ash</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[ttre]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/ash</guid>
     </item>
     <item>
       <title>Sparrow</title>
       <link>https://prumnopytis.github.io/blog/2019/01/11/sparrow</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[Photo of a sparrow, maybe.]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/sparrow</guid>
     </item>

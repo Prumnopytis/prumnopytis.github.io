@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Started an org-page blog with Github pages - Prumnopytis</title>
+    <title>Dislike python - Prumnopytis</title>
     <meta charset="utf-8" />
     <meta name="author" content="jake" />
-    <meta name="description" content="Everything has now worked at least once" />
-    <meta name="keywords" content="blog first org github" />
+    <meta name="description" content="Expressing my dislike of Python" />
+    <meta name="keywords" content="python" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -31,45 +31,126 @@
 
 <div>
 <div class="post">
-<h1>Started an org-page blog with Github pages</h1>
-<div id="outline-container-org30b8630" class="outline-2">
-<h2 id="org30b8630">Started a blog</h2>
+<h1>Dislike python</h1>
+<div id="outline-container-orgdd4967f" class="outline-2">
+<h2 id="orgdd4967f">Why am I a Python programmer?</h2>
+<div class="outline-text-2" id="text-orgdd4967f">
+<p>
+I spent a summer reviewing and coding foreground Matlab implementations of image segmentation algorithms.
+</p>
+
+<p>
+Python was not a proprietary language and at the time I observed the scipy stack had happened to  move a little faster on some algorithms I cared about.
+</p>
+
+<p>
+Coming from Matlab-physics, similar Python module APIs were similar.
+</p>
 </div>
-<div id="outline-container-orgd344cee" class="outline-2">
-<h2 id="orgd344cee"><span class="todo TODO">TODO</span> Work on worksheet-generation company</h2>
 </div>
-<div id="outline-container-org3510f07" class="outline-2">
-<h2 id="org3510f07"><span class="todo TODO">TODO</span> Make toy game engine</h2>
+
+<div id="outline-container-orge308575" class="outline-2">
+<h2 id="orge308575">Why do I dislike Python?</h2>
+<div class="outline-text-2" id="text-orge308575">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Bash seems better at being sh than Python is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">R seems better for conveniently exposing C and Fortran than Python is</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="outline-container-org2b23a04" class="outline-2">
-<h2 id="org2b23a04"><span class="todo TODO">TODO</span> Get to any actually interesting section of Goodfellow et al Deep Learning</h2>
 </div>
-<div id="outline-container-org289bd6b" class="outline-2">
-<h2 id="org289bd6b"><span class="todo TODO">TODO</span> Actually have public gits</h2>
+
+<div id="outline-container-org5ead1b2" class="outline-2">
+<h2 id="org5ead1b2">Python being useful</h2>
+<div class="outline-text-2" id="text-org5ead1b2">
+<pre class="example">
+python3 -m venv venv
+source venv/bin/activate
+pip install pygame
+</pre>
+<p>
+and
+</p>
+<pre class="example">
+python3 -m venv venv
+source venv/bin/activate
+pip install ansible
+ansible-galaxy install geerlingguy.nfs
+</pre>
+<p>
+for example.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Built in virtual environment module</td>
+</tr>
+
+<tr>
+<td class="org-left">(Using something in shell is still shell)</td>
+</tr>
+
+<tr>
+<td class="org-left">Built in package manager has a lot</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="outline-container-org59674bc" class="outline-2">
-<h2 id="org59674bc"><span class="todo TODO">TODO</span> Use microphone to triangulate local owl's roosts</h2>
 </div>
-<div id="outline-container-org3fb0e1f" class="outline-2">
-<h2 id="org3fb0e1f"><span class="todo TODO">TODO</span> Figure out how photos fit into this (text only ;p) blog format?</h2>
+
+<div id="outline-container-org947e4dc" class="outline-2">
+<h2 id="org947e4dc">Python as a language</h2>
+<div class="outline-text-2" id="text-org947e4dc">
+<pre class="example">
+def getfizzbuzz(n):
+    listToPrint=[]
+
+    if n % 3 is 0:
+        listToPrint+=["Fizz"]
+
+    if n % 5 == 0:
+        listToPrint.append(
+            "Buzz",
+	)
+
+    if listToPrint: return ''.join(listToPrint[::]);
+    else: 
+        return n
+
+for fizzresponse in [ getfizzbuzz(n=n-1) for n in range(2, 102, 1) ]: print(fizzresponse);
+</pre>
+
+<p>
+That got a little silly.
+</p>
 </div>
-<div id="outline-container-orgda4a469" class="outline-2">
-<h2 id="orgda4a469"><span class="todo TODO">TODO</span> Up my Youtube game: <a href="https://www.youtube.com/channel/UCZcZQAT66nH_m9z8R8aeXPg">My Youtube channel</a></h2>
-</div>
-<div id="outline-container-org5309b1c" class="outline-2">
-<h2 id="org5309b1c"><span class="todo TODO">TODO</span> Make website for aforesaid worksheet company</h2>
-</div>
-<div id="outline-container-orgb45cdea" class="outline-2">
-<h2 id="orgb45cdea"><span class="todo TODO">TODO</span> Get tutoring gigs and use to promote worksheets</h2>
 </div>
 
 </div>
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2019-01-11</span>
-        <span title="last modification date" class="post-info">2019-01-11</span>
-        <span title="tags" class="post-info"><a href="/tags/introduction/">introduction</a></span>
+        <span title="post date" class="post-info">2019-01-27</span>
+        <span title="last modification date" class="post-info">2019-01-27</span>
+        <span title="tags" class="post-info"><a href="/tags/polemic/">polemic</a></span>
         <span title="author" class="post-info">jake</span>
       </div>
       <section>
@@ -77,8 +158,8 @@
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2019/01/11/started-an-org-page-blog-with-github-pages";
-          var disqus_url = "https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages";
+          var disqus_identifier = "/blog/2019/01/27/dislike-python";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/01/27/dislike-python";
           var disqus_shortname = 'prumnopytis-github-io';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {

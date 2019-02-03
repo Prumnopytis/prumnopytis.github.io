@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>org-mode org-babel ess-ample - Prumnopytis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="jake" />
+    <meta name="description" content="Iris R hello world with emacs" />
+    <meta name="keywords" content="Programming, Example" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Prumnopytis</a></h1>
+        <p>Prumnopytis</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/Prumnopytis">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="prumnopytis.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>org-mode org-babel ess-ample</h1>
+<div id="outline-container-orgfbc867f" class="outline-2">
+<h2 id="orgfbc867f">Using&#xa0;&#xa0;&#xa0;<span class="tag"><span class="dependencies">dependencies</span></span></h2>
+<div class="outline-text-2" id="text-orgfbc867f">
+<ul class="org-ul">
+<li>emacs 27</li>
+<li>org-mode</li>
+<li>org-babel</li>
+<li>ess (Emacs speaks statistics)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdaeb6e1" class="outline-2">
+<h2 id="orgdaeb6e1">Inserting source&#xa0;&#xa0;&#xa0;<span class="tag"><span class="commands">commands</span></span></h2>
+<div class="outline-text-2" id="text-orgdaeb6e1">
+<pre class="example">
+&lt;s &lt;tab&gt; R
+</pre>
+
+<pre class="example">
+#+BEGIN_SRC R
+
+#+END_SRC
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org7b27af7" class="outline-2">
+<h2 id="org7b27af7">Installing dplyr and ggplot</h2>
+<div class="outline-text-2" id="text-org7b27af7">
+<div class="org-src-container">
+<pre class="src src-R">install.packages(c("dplyr","ggplot2"))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd98e3ec" class="outline-2">
+<h2 id="orgd98e3ec">Following along <a href="https://wilkelab.org/classes/SDS348/2015_spring_worksheets/class10_solutions.html">The Wilke Lab</a></h2>
+<div class="outline-text-2" id="text-orgd98e3ec">
+<div class="org-src-container">
+<pre class="src src-R">library(dplyr)
+iris %&gt;% select(-Species) %&gt;% # remove Species column
+  kmeans(centers=3) -&gt;        # do k-means clustering with 3 centers
+  km                          # store result as `km`
+
+# now display the results from the analysis
+km
+</pre>
+</div>
+
+<p>
+gets us
+</p>
+<pre class="example">
+K-means clustering with 3 clusters of sizes 50, 62, 38
+
+Cluster means:
+  Sepal.Length Sepal.Width Petal.Length Petal.Width
+1     5.006000    3.428000     1.462000    0.246000
+2     5.901613    2.748387     4.393548    1.433871
+3     6.850000    3.073684     5.742105    2.071053
+
+Clustering vector:
+  [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ [38] 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ [75] 2 2 2 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 2 3 3 3 3 2 3 3 3 3
+[112] 3 3 2 2 3 3 3 3 2 3 2 3 2 3 3 2 2 3 3 3 3 3 2 3 3 3 3 2 3 3 3 2 3 3 3 2 3
+[149] 3 2
+
+Within cluster sum of squares by cluster:
+[1] 15.15100 39.82097 23.87947
+ (between_SS / total_SS =  88.4 %)
+
+Available components:
+
+[1] "cluster"      "centers"      "totss"        "withinss"     "tot.withinss"
+[6] "betweenss"    "size"         "iter"         "ifault"   
+</pre>
+<p>
+in the \*R:&lt;location&gt;\* buffer.
+</p>
+
+<p>
+The source executions are contiguous
+</p>
+<div class="org-src-container">
+<pre class="src src-R">km$centers
+</pre>
+</div>
+<pre class="example">
+  Sepal.Length Sepal.Width Petal.Length Petal.Width
+1     5.006000    3.428000     1.462000    0.246000
+2     5.901613    2.748387     4.393548    1.433871
+3     6.850000    3.073684     5.742105    2.071053
+</pre>
+
+<p>
+Plotting
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"># add species information back into PCA data
+# we use `factor(km$cluster)` to tell R that the cluster numbers represent distinct categories,
+# not continuous values 
+iris_clustered &lt;- data.frame(iris, cluster=factor(km$cluster))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-R">library('ggplot2')
+ggplot(iris_clustered, aes(x=Petal.Width, y=Sepal.Width, color=cluster, shape=Species)) + geom_point()
+ggsave("irisclusters.png")
+</pre>
+</div>
+
+<p>
+later I should do some analysis to public retinal fundus image corpora.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2019-02-03</span>
+        <span title="last modification date" class="post-info">2019-02-04</span>
+        <span title="tags" class="post-info"><a href="/tags/emacs/">emacs</a>, <a href="/tags/org-mode/">org-mode</a>, <a href="/tags/org-babel/">org-babel</a>, <a href="/tags/ess/">ess</a></span>
+        <span title="author" class="post-info">jake</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2019/02/03/org-mode-org-babel-ess-ample";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/02/03/org-mode-org-babel-ess-ample";
+          var disqus_shortname = 'prumnopytis-github-io';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       <div id="hashover"></div>
+       <script type="text/javascript" src="/hashover.php"></script>
+       <noscript>You must have JavaScript enabled to use the comments.</noscript>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:jake &lt;at&gt; localhost &lt;dot&gt; localdomain">jake</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

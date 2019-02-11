@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Mon, 04 Feb 2019 09:46:03 NZDT</pubDate>
-    <lastBuildDate>Mon, 04 Feb 2019 09:46:03 NZDT</lastBuildDate>
+    <pubDate>Mon, 11 Feb 2019 16:44:37 NZDT</pubDate>
+    <lastBuildDate>Mon, 11 Feb 2019 16:44:37 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Review:[[https://www.amazon.com/dp/1466586966/ref=cm_sw_su_dp?tag=devtools-20][Advanced R]] by [[https://github.com/hadley][Hadley Wickham]]</title>
+      <link>https://prumnopytis.github.io/blog/2019/02/11/review-advanced-r-by-hadley-wickham</link>
+      <description><![CDATA[Book review]]></description>
+      <pubDate>2019-02-11</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/02/11/review-advanced-r-by-hadley-wickham</guid>
+    </item>
     <item>
       <title>org-mode org-babel ess-ample</title>
       <link>https://prumnopytis.github.io/blog/2019/02/03/org-mode-org-babel-ess-ample</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[ttre]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/ash</guid>
-    </item>
-    <item>
-      <title>Sparrow</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/11/sparrow</link>
-      <description><![CDATA[Photo of a sparrow, maybe.]]></description>
-      <pubDate>2019-01-11</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/11/sparrow</guid>
     </item>
   </channel>
 </rss>

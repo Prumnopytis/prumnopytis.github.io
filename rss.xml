@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Wed, 13 Feb 2019 16:15:10 NZDT</pubDate>
-    <lastBuildDate>Wed, 13 Feb 2019 16:15:10 NZDT</lastBuildDate>
+    <pubDate>Wed, 13 Feb 2019 16:16:21 NZDT</pubDate>
+    <lastBuildDate>Wed, 13 Feb 2019 16:16:21 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Test</title>
+      <link>https://prumnopytis.github.io/blog/2019/02/13/test</link>
+      <description><![CDATA[Test]]></description>
+      <pubDate>2019-02-13</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/02/13/test</guid>
+    </item>
     <item>
       <title>Review:[[https://www.amazon.com/dp/1466586966/ref=cm_sw_su_dp?tag=devtools-20][Advanced R]] by [[https://github.com/hadley][Hadley Wickham]]</title>
       <link>https://prumnopytis.github.io/blog/2019/02/11/review-advanced-r-by-hadley-wickham</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Bird photography.]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</guid>
-    </item>
-    <item>
-      <title>ash</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/11/ash</link>
-      <description><![CDATA[ttre]]></description>
-      <pubDate>2019-01-11</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/11/ash</guid>
     </item>
   </channel>
 </rss>

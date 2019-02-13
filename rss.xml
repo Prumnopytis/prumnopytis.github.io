@@ -4,8 +4,8 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Wed, 13 Feb 2019 16:26:37 NZDT</pubDate>
-    <lastBuildDate>Wed, 13 Feb 2019 16:26:37 NZDT</lastBuildDate>
+    <pubDate>Wed, 13 Feb 2019 17:59:56 NZDT</pubDate>
+    <lastBuildDate>Wed, 13 Feb 2019 17:59:56 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -14,6 +14,13 @@
       <description><![CDATA[Book review]]></description>
       <pubDate>2019-02-13</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/02/11/review-advanced-r-by-hadley-wickham</guid>
+    </item>
+    <item>
+      <title>Org-page example</title>
+      <link>https://prumnopytis.github.io/blog/2019/02/13/org-page-example</link>
+      <description><![CDATA[An example of org-page for youtube]]></description>
+      <pubDate>2019-02-13</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/02/13/org-page-example</guid>
     </item>
     <item>
       <title>Test</title>
@@ -70,13 +77,6 @@
       <description><![CDATA[Everything has now worked at least once]]></description>
       <pubDate>2019-01-11</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</guid>
-    </item>
-    <item>
-      <title>Bird photos</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</link>
-      <description><![CDATA[Bird photography.]]></description>
-      <pubDate>2019-01-11</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/11/bird-photos</guid>
     </item>
   </channel>
 </rss>

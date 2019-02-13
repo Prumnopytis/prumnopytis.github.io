@@ -34,6 +34,128 @@
 <div class="post">
 <h1>Org-page example</h1>
 
+<div id="outline-container-org28635f9" class="outline-2">
+<h2 id="org28635f9">How to op/new-post</h2>
+<div class="outline-text-2" id="text-org28635f9">
+</div>
+<div id="outline-container-org6e89172" class="outline-3">
+<h3 id="org6e89172">Open Emacs, if you are not already in Emacs.</h3>
+</div>
+<div id="outline-container-org4d397a8" class="outline-3">
+<h3 id="org4d397a8">Install</h3>
+<div class="outline-text-3" id="text-org4d397a8">
+<p>
+Get it from   Melpa  (community emacs package repository), say, using
+</p>
+
+<pre class="example">
+M-x list-packages
+C-s org-page
+</pre>
+<p>
+\[i\] for mark-install, \[x\] for execute-marked.
+</p>
+
+<p>
+You might need to add melpa as a source.
+</p>
+</div>
+
+<div id="outline-container-orgbd133e1" class="outline-4">
+<h4 id="orgbd133e1">Configuration</h4>
+<div class="outline-text-4" id="text-orgbd133e1">
+<p>
+See <a href="https://github.com/kelvinh/org-page">the creator's git</a>
+</p>
+
+<p>
+For example, you can set your disqus and a google analytics ID.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org8dc9ca0"></a>The way Github credentials like to be stored seems insecure.&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aside">aside</span></span><br /></li>
+<li><a id="org52e2d8c"></a>If you use a github repository yourname.github.io your github page tracks that naturally&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aside">aside</span></span><br /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3d83c08" class="outline-3">
+<h3 id="org3d83c08">Regular usage</h3>
+<div class="outline-text-3" id="text-org3d83c08">
+<ol class="org-ol">
+<li>Decide to write a post</li>
+<li></li>
+</ol>
+<pre class="example">
+M-x op/new-post
+</pre>
+<ol class="org-ol">
+<li>Follow the prompts</li>
+</ol>
+<p>
+I don't have tags and keywords sussed yet.
+</p>
+<ol class="org-ol">
+<li>org-mode your life in plain text</li>
+</ol>
+<p>
+I find the next step confusing.
+</p>
+<ol class="org-ol">
+<li>Open a shell.</li>
+</ol>
+<pre class="example">
+M-x op/do-post
+</pre>
+<p>
+has checked out a local branch, "source" in your local github-page repo.
+</p>
+
+<p>
+These are the .org source that exports into your static html site.
+</p>
+
+<ol class="org-ol">
+<li>Just \[\textit{commit}\] your changes to this branch. THEN</li>
+<li></li>
+</ol>
+<pre class="example">
+M-x op/do-publication
+</pre>
+<ol class="org-ol">
+<li><ol class="org-ol">
+<li>Yes, all org files is fine.</li>
+<li>No, I don't want to stage this locally</li>
+<li>Yes commit (default)</li>
+<li>Yes push</li>
+</ol></li>
+<li>Wait for about a minute after it pushes.</li>
+</ol>
+
+<p>
+Voila!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb98087b" class="outline-3">
+<h3 id="orgb98087b">Improvements</h3>
+<div class="outline-text-3" id="text-orgb98087b">
+</div>
+<div id="outline-container-orgd88b79a" class="outline-4">
+<h4 id="orgd88b79a"><span class="done DONE">DONE</span> Figure out exactly what org-page wants you to do to embed pictures.</h4>
+<div class="outline-text-4" id="text-orgd88b79a">
+</div>
+</div>
+<div id="outline-container-org78ba6a8" class="outline-4">
+<h4 id="org78ba6a8"><span class="todo TODO">TODO</span> Extend org-page for embedding videos in iframes, if this doesn't already exist</h4>
+</div>
+<div id="outline-container-org590464a" class="outline-4">
+<h4 id="org590464a"><span class="todo TODO">TODO</span> Make a DSL in R for the YouTube API</h4>
+</div>
+</div>
+</div>
+
 </div>
 </div>
     <div>

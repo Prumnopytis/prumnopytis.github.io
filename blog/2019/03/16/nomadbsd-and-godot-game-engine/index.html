@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>nomadBSD and godot game engine - Prumnopytis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="jake" />
+    <meta name="description" content="In which I make a bootable USB, then install and run godot game engine on it" />
+    <meta name="keywords" content="godot, BSD, nomadBSD, freeBSD" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Prumnopytis</a></h1>
+        <p>Prumnopytis</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/test/">Test</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/Prumnopytis">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="prumnopytis.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>nomadBSD and godot game engine</h1>
+
+<div id="outline-container-org17caf44" class="outline-2">
+<h2 id="org17caf44">NomadBSD and Godot</h2>
+<div class="outline-text-2" id="text-org17caf44">
+<p>
+My friend was interested in a portable USB drive operating system to carry around his godot game engine.
+</p>
+
+<p>
+I told him I had seen
+</p>
+</div>
+
+<div id="outline-container-org5ddc3aa" class="outline-3">
+<h3 id="org5ddc3aa">NomadBSD,</h3>
+<div class="outline-text-3" id="text-org5ddc3aa">
+<p>
+FreeBSD tweaked for being an on-usb OS. I downloaded nomadBSD
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">wget http://nomadbsd.org/download/nomadbsd-1.2-RC2.efi.lzma
+yum install lzma
+lzma -d nomadbsd-1.2-RC2.efi.lzma
+dd bs=1M if=./nomadbsd-1.2-RC2.efi of=/dev/sdb conv=fsync
+</pre>
+</div>
+<p>
+and dd'ed it onto a 16GB USB 3.
+</p>
+</div>
+
+<div id="outline-container-org3fa10a4" class="outline-4">
+<h4 id="org3fa10a4">First attempt</h4>
+<div class="outline-text-4" id="text-org3fa10a4">
+<p>
+I plugged it into the drive and restarted my laptop. Darkness. 
+</p>
+
+<p>
+My laptop screen had been replaced, and since then the default display is fallback to the VGA port. I plugged it into a monitor and got the start of an initial Nomad FreeBSD setup. Defaults failed to detect the fallback or VGA displays, and I was dumped into a recovery command line.
+</p>
+
+<p>
+Restarts after that started up to FreeBSD with csh after nebulous warnings.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1bf2cd5" class="outline-4">
+<h4 id="org1bf2cd5">Second attempt</h4>
+<div class="outline-text-4" id="text-org1bf2cd5">
+<p>
+I dug up another laptop whose screen had not been replaced (yet) that fortunately also had one USB3 port. NomadBSD brought up an initial configuration GUI, the usual culprits
+</p>
+<ul class="org-ul">
+<li>root password</li>
+<li>Keyboard</li>
+<li>Time zone</li>
+</ul>
+
+<p>
+Later restarts lead to a prompt to choose vesa or accelerated graphics, then an xfce4 desktop environment. Shut downs take a couple of seconds to write changes to the USB 3.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8e7df6b" class="outline-3">
+<h3 id="org8e7df6b">Godot</h3>
+<div class="outline-text-3" id="text-org8e7df6b">
+<p>
+I clicked a promising looking terminal icon on a mac-style wheel at the bottom of the display, yielding Sakura.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">pkg search godot
+</pre>
+</div>
+
+<pre class="example">
+godot-3.0.6_1                  Game runtime engine
+godot-tools-3.0.6_1            Game integrated development environment
+godot2-2.1.5_1                 Game runtime engine
+godot2-tools-2.1.5_1           Game integrated development environment
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-shell">pkg install godot-3.0.6_1
+</pre>
+</div>
+
+<pre class="example">
+Updating FreeBSD repository catalogue...
+FreeBSD repository is up to date.
+All repositories are up to date.
+pkg: gstreamer1-plugins-lame has a missing dependency: lame
+The following 1 package(s) will be affected (of 0 checked):
+
+New packages to be INSTALLED:
+	godot: 3.0.6_1
+
+Number of packages to be installed: 1
+
+The process will require 26 MiB more space.
+6 MiB to be downloaded.
+
+Proceed with this action? [y/N]: y
+[1/1] Fetching godot-3.0.6_1.txz: 100%    6 MiB   1.3MB/s    00:05    
+Checking integrity... done (0 conflicting)
+[1/1] Installing godot-3.0.6_1...
+[1/1] Extracting godot-3.0.6_1: 100%
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-shell">pkg install godot-tools-3.0.6_1
+</pre>
+</div>
+
+<pre class="example">
+Updating FreeBSD repository catalogue...
+FreeBSD repository is up to date.
+All repositories are up to date.
+pkg: gstreamer1-plugins-lame has a missing dependency: lame
+The following 1 package(s) will be affected (of 0 checked):
+
+New packages to be INSTALLED:
+	godot-tools: 3.0.6_1
+
+Number of packages to be installed: 1
+
+The process will require 241 MiB more space.
+123 MiB to be downloaded.
+
+Proceed with this action? [y/N]: y
+[1/1] Fetching godot-tools-3.0.6_1.txz: 100%  123 MiB   3.2MB/s    00:40    
+Checking integrity... done (0 conflicting)
+[1/1] Installing godot-tools-3.0.6_1...
+[1/1] Extracting godot-tools-3.0.6_1: 100%
+</pre>
+
+<div class="figure">
+<p><img src="Screenshot_2019-03-16_18-51-56.png" alt="Screenshot_2019-03-16_18-51-56.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc018281" class="outline-3">
+<h3 id="orgc018281">Appendix</h3>
+<div class="outline-text-3" id="text-orgc018281">
+</div>
+<div id="outline-container-org22a1932" class="outline-4">
+<h4 id="org22a1932">Taking a screenshot in xfce4</h4>
+<div class="outline-text-4" id="text-org22a1932">
+<div class="org-src-container">
+<pre class="src src-shell">pkg install xfce4-screenshooter-plugin-1.9.3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge8728a6" class="outline-2">
+<h2 id="orge8728a6">Pretty easy</h2>
+<div class="outline-text-2" id="text-orge8728a6">
+<ol class="org-ol">
+<li>Download</li>
+<li>Install lzma</li>
+<li>Extract</li>
+<li>dd onto usb</li>
+<li>Boot from USB -&gt; Initial configuration</li>
+<li>Boot from USB -&gt; get xfce4</li>
+<li>Install godot game engine on as well</li>
+</ol>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2019-03-16</span>
+        <span title="last modification date" class="post-info">2019-03-16</span>
+        <span title="tags" class="post-info"><a href="/tags/how-to/">how-to</a>, <a href="/tags/bsd/">BSD</a>, <a href="/tags/pkg/">pkg</a></span>
+        <span title="author" class="post-info">jake</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2019/03/16/nomadbsd-and-godot-game-engine";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/03/16/nomadbsd-and-godot-game-engine";
+          var disqus_shortname = 'prumnopytis-github-io';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       <div id="hashover"></div>
+       <script type="text/javascript" src="/hashover.php"></script>
+       <noscript>You must have JavaScript enabled to use the comments.</noscript>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-84006835-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:jake &lt;at&gt; localhost &lt;dot&gt; localdomain">jake</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Wed, 13 Feb 2019 18:14:56 NZDT</pubDate>
-    <lastBuildDate>Wed, 13 Feb 2019 18:14:56 NZDT</lastBuildDate>
+    <pubDate>Sat, 16 Mar 2019 19:17:23 NZDT</pubDate>
+    <lastBuildDate>Sat, 16 Mar 2019 19:17:23 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>nomadBSD and godot game engine</title>
+      <link>https://prumnopytis.github.io/blog/2019/03/16/nomadbsd-and-godot-game-engine</link>
+      <description><![CDATA[In which I make a bootable USB, then install and run godot game engine on it]]></description>
+      <pubDate>2019-03-16</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/03/16/nomadbsd-and-godot-game-engine</guid>
+    </item>
     <item>
       <title>Review: Advanced R by [[Hadley Wickham]]</title>
       <link>https://prumnopytis.github.io/blog/2019/02/11/review-advanced-r-by-hadley-wickham</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[A photo of a silvereye]]></description>
       <pubDate>2019-01-12</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/12/silvereye</guid>
-    </item>
-    <item>
-      <title>Started an org-page blog with Github pages</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</link>
-      <description><![CDATA[Everything has now worked at least once]]></description>
-      <pubDate>2019-01-11</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/11/started-an-org-page-blog-with-github-pages</guid>
     </item>
   </channel>
 </rss>

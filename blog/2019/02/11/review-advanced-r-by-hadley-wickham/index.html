@@ -33,9 +33,9 @@
 <div>
 <div class="post">
 <h1>Review: Advanced R by [[Hadley Wickham]]</h1>
-<div id="outline-container-org8c4dfcd" class="outline-2">
-<h2 id="org8c4dfcd">Advanced R</h2>
-<div class="outline-text-2" id="text-org8c4dfcd">
+<div id="outline-container-org41bdf7a" class="outline-2">
+<h2 id="org41bdf7a">Advanced R</h2>
+<div class="outline-text-2" id="text-org41bdf7a">
 <p>
 has a large number of very short chapters across 450 pages, a format it probably owes to its <a href="http://adv-r.had.co.nz/">online availability</a>.
 </p>
@@ -44,11 +44,11 @@ has a large number of very short chapters across 450 pages, a format it probably
 <a href="https://github.com/hadley">The author</a> knits together
 </p>
 <ul class="org-ul">
-<li><a href="#org3478338">what R is</a></li>
-<li><a href="#org95fc119">some elements of development workflow</a></li>
-<li><a href="#org7329f47">what competent R looks like</a> segueing into</li>
-<li><a href="#org28f5d47">why R's idiosyncracies are</a>, which involved spiritually reliving <a href="https://www.amazon.com/LLVM-Cookbook-Mayur-Pandey/dp/178528598X">The LLVM Cookbook</a> (without LLVM),</li>
-<li>and <a href="#org64c7b87">how to make slow R sufficiently fast</a>.</li>
+<li><a href="#orga804c02">what R is</a></li>
+<li><a href="#orgb5985bb">some elements of development workflow</a></li>
+<li><a href="#orgc34fbb2">what competent R looks like</a> segueing into</li>
+<li><a href="#org1bb7248">why R's idiosyncracies are</a>, which involved spiritually reliving <a href="https://www.amazon.com/LLVM-Cookbook-Mayur-Pandey/dp/178528598X">The LLVM Cookbook</a> (without LLVM),</li>
+<li>and <a href="#org1b64f77">how to make slow R sufficiently fast</a>.</li>
 </ul>
 
 <p>
@@ -57,9 +57,9 @@ The work and author are an active part of the R community.
 </div>
 </div>
 
-<div id="outline-container-org31c3006" class="outline-2">
-<h2 id="org31c3006">Why was I here&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aside">aside</span>&#xa0;<span class="introspection">introspection</span></span></h2>
-<div class="outline-text-2" id="text-org31c3006">
+<div id="outline-container-org5997678" class="outline-2">
+<h2 id="org5997678">Why was I here&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aside">aside</span>&#xa0;<span class="introspection">introspection</span></span></h2>
+<div class="outline-text-2" id="text-org5997678">
 <p>
 I jumped ship from matlab to scipy in early 2014. It seemed more vibrant, and didn't involve buying licenses.
 </p>
@@ -72,9 +72,9 @@ Python in the wild has seemed increasingly jumbled, unmotivated and terminally n
 The <a href="https://www.math.waikato.ac.nz/stats">stats department at Waikato University</a> endorses R (kiwi as) and I have had commercial encounter with Apache Spark.
 </p>
 </div>
-<div id="outline-container-orge1c4c46" class="outline-3">
-<h3 id="orge1c4c46">Why R?</h3>
-<div class="outline-text-3" id="text-orge1c4c46">
+<div id="outline-container-orgcf80485" class="outline-3">
+<h3 id="orgcf80485">Why R?</h3>
+<div class="outline-text-3" id="text-orgcf80485">
 <p>
 I wanted a high level interactive language that fit in with and between Emacs org-mode and low level cluster / gpu implementation. 
 </p>
@@ -86,13 +86,13 @@ Emacs speaks statistics and R fit that bill beautifully out of the box.
 </div>
 </div>
 
-<div id="outline-container-org4e744b9" class="outline-2">
-<h2 id="org4e744b9">Lights</h2>
-<div class="outline-text-2" id="text-org4e744b9">
+<div id="outline-container-org118c8db" class="outline-2">
+<h2 id="org118c8db">Lights</h2>
+<div class="outline-text-2" id="text-org118c8db">
 </div>
-<div id="outline-container-orgae068e8" class="outline-3">
-<h3 id="orgae068e8">High</h3>
-<div class="outline-text-3" id="text-orgae068e8">
+<div id="outline-container-orgac5324b" class="outline-3">
+<h3 id="orgac5324b">High</h3>
+<div class="outline-text-3" id="text-orgac5324b">
 <ul class="org-ul">
 <li>Foundations building up to generic functions and S3 classes were a great refresher and primer</li>
 <li>Quick breakdown and examples of functional programming</li>
@@ -103,9 +103,9 @@ Emacs speaks statistics and R fit that bill beautifully out of the box.
 </div>
 </div>
 
-<div id="outline-container-orge592ca0" class="outline-3">
-<h3 id="orge592ca0">Low</h3>
-<div class="outline-text-3" id="text-orge592ca0">
+<div id="outline-container-orgd061486" class="outline-3">
+<h3 id="orgd061486">Low</h3>
+<div class="outline-text-3" id="text-orgd061486">
 <ul class="org-ul">
 <li>I would have liked less context around traversing R's abstract syntax tree even though it was useful</li>
 <li>Paid attention to RStudio and Windows installs without mentioning ESS</li>
@@ -117,9 +117,9 @@ Emacs speaks statistics and R fit that bill beautifully out of the box.
 </div>
 </div>
 
-<div id="outline-container-org284e3eb" class="outline-2">
-<h2 id="org284e3eb">Exercises</h2>
-<div class="outline-text-2" id="text-org284e3eb">
+<div id="outline-container-org26364c6" class="outline-2">
+<h2 id="org26364c6">Exercises</h2>
+<div class="outline-text-2" id="text-org26364c6">
 <p>
 I diverged from the prescribed exercises to just skimming them and then poking around independently in Foundations somewhere. 
 </p>
@@ -133,9 +133,9 @@ Did not ace any of the can-skip-this-section quizes :(.
 </p>
 </div>
 
-<div id="outline-container-orgdcf7bca" class="outline-3">
-<h3 id="orgdcf7bca">Playing with R with ESS with org-babel&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aside">aside</span></span></h3>
-<div class="outline-text-3" id="text-orgdcf7bca">
+<div id="outline-container-org3703517" class="outline-3">
+<h3 id="org3703517">Playing with R with ESS with org-babel&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aside">aside</span></span></h3>
+<div class="outline-text-3" id="text-org3703517">
 <p>
 Since I was not using R Studio!
 </p>
@@ -200,532 +200,532 @@ Load R org-babel evaluation:
 </div>
 </div>
 
-<div id="outline-container-orgfeddf77" class="outline-2">
-<h2 id="orgfeddf77">Table of Contents, marked done when I remembered to.</h2>
-<div class="outline-text-2" id="text-orgfeddf77">
+<div id="outline-container-org283d74a" class="outline-2">
+<h2 id="org283d74a">Table of Contents, marked done when I remembered to.</h2>
+<div class="outline-text-2" id="text-org283d74a">
 </div>
-<div id="outline-container-org292f188" class="outline-3">
-<h3 id="org292f188"><span class="done DONE">DONE</span> Introduction <code>[8/8]</code></h3>
-<div class="outline-text-3" id="text-org292f188">
+<div id="outline-container-org1af551b" class="outline-3">
+<h3 id="org1af551b"><span class="done DONE">DONE</span> Introduction <code>[8/8]</code></h3>
+<div class="outline-text-3" id="text-org1af551b">
 </div>
-<div id="outline-container-orga77959a" class="outline-4">
-<h4 id="orga77959a"><span class="done DONE">DONE</span> Who should read this book</h4>
-<div class="outline-text-4" id="text-orga77959a">
-</div>
-</div>
-<div id="outline-container-orgd440f7b" class="outline-4">
-<h4 id="orgd440f7b"><span class="done DONE">DONE</span> What you will get out of this book</h4>
-<div class="outline-text-4" id="text-orgd440f7b">
+<div id="outline-container-orgfd1bbc3" class="outline-4">
+<h4 id="orgfd1bbc3"><span class="done DONE">DONE</span> Who should read this book</h4>
+<div class="outline-text-4" id="text-orgfd1bbc3">
 </div>
 </div>
-<div id="outline-container-org0434cc1" class="outline-4">
-<h4 id="org0434cc1"><span class="done DONE">DONE</span> Meta-techniques</h4>
-<div class="outline-text-4" id="text-org0434cc1">
+<div id="outline-container-org3405ab9" class="outline-4">
+<h4 id="org3405ab9"><span class="done DONE">DONE</span> What you will get out of this book</h4>
+<div class="outline-text-4" id="text-org3405ab9">
 </div>
 </div>
-<div id="outline-container-org7730214" class="outline-4">
-<h4 id="org7730214"><span class="done DONE">DONE</span> Recommended reading</h4>
-<div class="outline-text-4" id="text-org7730214">
+<div id="outline-container-org28a68f5" class="outline-4">
+<h4 id="org28a68f5"><span class="done DONE">DONE</span> Meta-techniques</h4>
+<div class="outline-text-4" id="text-org28a68f5">
 </div>
 </div>
-<div id="outline-container-org6b56faa" class="outline-4">
-<h4 id="org6b56faa"><span class="done DONE">DONE</span> Getting help</h4>
-<div class="outline-text-4" id="text-org6b56faa">
+<div id="outline-container-org8e92f47" class="outline-4">
+<h4 id="org8e92f47"><span class="done DONE">DONE</span> Recommended reading</h4>
+<div class="outline-text-4" id="text-org8e92f47">
 </div>
 </div>
-<div id="outline-container-org548c449" class="outline-4">
-<h4 id="org548c449"><span class="done DONE">DONE</span> Acknowledgments</h4>
-<div class="outline-text-4" id="text-org548c449">
+<div id="outline-container-org601d193" class="outline-4">
+<h4 id="org601d193"><span class="done DONE">DONE</span> Getting help</h4>
+<div class="outline-text-4" id="text-org601d193">
 </div>
 </div>
-<div id="outline-container-org4a6ce16" class="outline-4">
-<h4 id="org4a6ce16"><span class="done DONE">DONE</span> Conventions</h4>
-<div class="outline-text-4" id="text-org4a6ce16">
+<div id="outline-container-org414fa09" class="outline-4">
+<h4 id="org414fa09"><span class="done DONE">DONE</span> Acknowledgments</h4>
+<div class="outline-text-4" id="text-org414fa09">
 </div>
 </div>
-<div id="outline-container-org304437f" class="outline-4">
-<h4 id="org304437f"><span class="done DONE">DONE</span> Colophon</h4>
-<div class="outline-text-4" id="text-org304437f">
+<div id="outline-container-orgb29c209" class="outline-4">
+<h4 id="orgb29c209"><span class="done DONE">DONE</span> Conventions</h4>
+<div class="outline-text-4" id="text-orgb29c209">
+</div>
+</div>
+<div id="outline-container-org748564e" class="outline-4">
+<h4 id="org748564e"><span class="done DONE">DONE</span> Colophon</h4>
+<div class="outline-text-4" id="text-org748564e">
 </div>
 </div>
 </div>
-<div id="outline-container-org3478338" class="outline-3">
-<h3 id="org3478338"><span class="done DONE">DONE</span> Foundations <code>[8/8]</code></h3>
-<div class="outline-text-3" id="text-org3478338">
+<div id="outline-container-orga804c02" class="outline-3">
+<h3 id="orga804c02"><span class="done DONE">DONE</span> Foundations <code>[8/8]</code></h3>
+<div class="outline-text-3" id="text-orga804c02">
 </div>
-<div id="outline-container-org551ed3d" class="outline-4">
-<h4 id="org551ed3d"><span class="done DONE">DONE</span> Data structures <code>[5/5]</code></h4>
-<div class="outline-text-4" id="text-org551ed3d">
-</div>
-<ul class="org-ul">
-<li><a id="orgb327545"></a><span class="done DONE">DONE</span> Vectors <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-orgb327545">
+<div id="outline-container-orgfef03cf" class="outline-4">
+<h4 id="orgfef03cf"><span class="done DONE">DONE</span> Data structures <code>[5/5]</code></h4>
+<div class="outline-text-4" id="text-orgfef03cf">
 </div>
 <ul class="org-ul">
-<li><a id="orgfa37e3c"></a><span class="done DONE">DONE</span> Atomic vectors <code>[2/2]</code><br />
-<div class="outline-text-6" id="text-orgfa37e3c">
+<li><a id="org82037ba"></a><span class="done DONE">DONE</span> Vectors <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org82037ba">
 </div>
 <ul class="org-ul">
-<li><a id="org448e5dd"></a><span class="done DONE">DONE</span> Types and tests<br />
-<div class="outline-text-7" id="text-org448e5dd">
+<li><a id="org63ed377"></a><span class="done DONE">DONE</span> Atomic vectors <code>[2/2]</code><br />
+<div class="outline-text-6" id="text-org63ed377">
+</div>
+<ul class="org-ul">
+<li><a id="org7c16ef7"></a><span class="done DONE">DONE</span> Types and tests<br />
+<div class="outline-text-7" id="text-org7c16ef7">
 </div>
 </li>
-<li><a id="orgb46d7b8"></a><span class="done DONE">DONE</span> Coercion<br />
-<div class="outline-text-7" id="text-orgb46d7b8">
+<li><a id="org0f83a06"></a><span class="done DONE">DONE</span> Coercion<br />
+<div class="outline-text-7" id="text-org0f83a06">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org9538b87"></a><span class="done DONE">DONE</span> Lists<br />
-<div class="outline-text-6" id="text-org9538b87">
+<li><a id="org6cf3373"></a><span class="done DONE">DONE</span> Lists<br />
+<div class="outline-text-6" id="text-org6cf3373">
 </div>
 </li>
-<li><a id="orgdbe2898"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgdbe2898">
+<li><a id="orge694101"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orge694101">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org3e6c85b"></a><span class="done DONE">DONE</span> Attributes <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org3e6c85b">
+<li><a id="orgfc397ea"></a><span class="done DONE">DONE</span> Attributes <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-orgfc397ea">
 </div>
 <ul class="org-ul">
-<li><a id="org7c70739"></a><span class="done DONE">DONE</span> Names<br />
-<div class="outline-text-6" id="text-org7c70739">
+<li><a id="org5a0e685"></a><span class="done DONE">DONE</span> Names<br />
+<div class="outline-text-6" id="text-org5a0e685">
 </div>
 </li>
-<li><a id="orga217f0d"></a><span class="done DONE">DONE</span> Factors<br />
-<div class="outline-text-6" id="text-orga217f0d">
+<li><a id="org6fde737"></a><span class="done DONE">DONE</span> Factors<br />
+<div class="outline-text-6" id="text-org6fde737">
 </div>
 </li>
-<li><a id="org261ae9c"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org261ae9c">
+<li><a id="org536bddd"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org536bddd">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org19aa129"></a><span class="done DONE">DONE</span> Matrices and arrays <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org19aa129">
+<li><a id="org273e4d0"></a><span class="done DONE">DONE</span> Matrices and arrays <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org273e4d0">
 </div>
 <ul class="org-ul">
-<li><a id="orgab5e76b"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgab5e76b">
+<li><a id="orgf83edfd"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgf83edfd">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org117e0fc"></a><span class="done DONE">DONE</span> Data frames <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org117e0fc">
+<li><a id="orgbb0f47b"></a><span class="done DONE">DONE</span> Data frames <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-orgbb0f47b">
 </div>
 <ul class="org-ul">
-<li><a id="org2288160"></a><span class="done DONE">DONE</span> Creation<br />
-<div class="outline-text-6" id="text-org2288160">
+<li><a id="org48b8e28"></a><span class="done DONE">DONE</span> Creation<br />
+<div class="outline-text-6" id="text-org48b8e28">
 </div>
 </li>
-<li><a id="org6d24e63"></a><span class="done DONE">DONE</span> Testing and coercion<br />
-<div class="outline-text-6" id="text-org6d24e63">
+<li><a id="org9b7ec0a"></a><span class="done DONE">DONE</span> Testing and coercion<br />
+<div class="outline-text-6" id="text-org9b7ec0a">
 </div>
 </li>
-<li><a id="org672fabd"></a><span class="done DONE">DONE</span> Combining data frames<br />
-<div class="outline-text-6" id="text-org672fabd">
+<li><a id="org37802e7"></a><span class="done DONE">DONE</span> Combining data frames<br />
+<div class="outline-text-6" id="text-org37802e7">
 </div>
 </li>
-<li><a id="orge47ef8f"></a><span class="done DONE">DONE</span> Special columns<br />
-<div class="outline-text-6" id="text-orge47ef8f">
+<li><a id="org73a2eaf"></a><span class="done DONE">DONE</span> Special columns<br />
+<div class="outline-text-6" id="text-org73a2eaf">
 </div>
 </li>
-<li><a id="org92e4771"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org92e4771">
-</div>
-</li>
-</ul>
-</li>
-<li><a id="org997e9b7"></a><span class="done DONE">DONE</span> Answers<br />
-<div class="outline-text-5" id="text-org997e9b7">
+<li><a id="org6a3c9ef"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org6a3c9ef">
 </div>
 </li>
 </ul>
+</li>
+<li><a id="org7e64d19"></a><span class="done DONE">DONE</span> Answers<br />
+<div class="outline-text-5" id="text-org7e64d19">
 </div>
-<div id="outline-container-org70f808f" class="outline-4">
-<h4 id="org70f808f"><span class="done DONE">DONE</span> Subsetting <code>[5/5]</code></h4>
-<div class="outline-text-4" id="text-org70f808f">
+</li>
+</ul>
+</div>
+<div id="outline-container-org693f877" class="outline-4">
+<h4 id="org693f877"><span class="done DONE">DONE</span> Subsetting <code>[5/5]</code></h4>
+<div class="outline-text-4" id="text-org693f877">
 </div>
 <ul class="org-ul">
-<li><a id="org94e74a8"></a><span class="done DONE">DONE</span> Data types <code>[7/7]</code><br />
-<div class="outline-text-5" id="text-org94e74a8">
+<li><a id="org2c0de31"></a><span class="done DONE">DONE</span> Data types <code>[7/7]</code><br />
+<div class="outline-text-5" id="text-org2c0de31">
 </div>
 <ul class="org-ul">
-<li><a id="orga81d92a"></a><span class="done DONE">DONE</span> Atomic vectors<br />
-<div class="outline-text-6" id="text-orga81d92a">
+<li><a id="orgbc5bee5"></a><span class="done DONE">DONE</span> Atomic vectors<br />
+<div class="outline-text-6" id="text-orgbc5bee5">
 </div>
 </li>
-<li><a id="orgcf4460c"></a><span class="done DONE">DONE</span> Lists<br />
-<div class="outline-text-6" id="text-orgcf4460c">
+<li><a id="org810bc6e"></a><span class="done DONE">DONE</span> Lists<br />
+<div class="outline-text-6" id="text-org810bc6e">
 </div>
 </li>
-<li><a id="org3f96704"></a><span class="done DONE">DONE</span> Matrices and arrays<br />
-<div class="outline-text-6" id="text-org3f96704">
+<li><a id="orgf81f437"></a><span class="done DONE">DONE</span> Matrices and arrays<br />
+<div class="outline-text-6" id="text-orgf81f437">
 </div>
 </li>
-<li><a id="org0dc9eca"></a><span class="done DONE">DONE</span> Data frames<br />
-<div class="outline-text-6" id="text-org0dc9eca">
+<li><a id="org31cb6c4"></a><span class="done DONE">DONE</span> Data frames<br />
+<div class="outline-text-6" id="text-org31cb6c4">
 </div>
 </li>
-<li><a id="org34316ea"></a><span class="done DONE">DONE</span> S3 objects<br />
-<div class="outline-text-6" id="text-org34316ea">
+<li><a id="orgcf6fd47"></a><span class="done DONE">DONE</span> S3 objects<br />
+<div class="outline-text-6" id="text-orgcf6fd47">
 </div>
 </li>
-<li><a id="orge2f509f"></a><span class="done DONE">DONE</span> S4 objects<br />
-<div class="outline-text-6" id="text-orge2f509f">
+<li><a id="orgbed4a4f"></a><span class="done DONE">DONE</span> S4 objects<br />
+<div class="outline-text-6" id="text-orgbed4a4f">
 </div>
 </li>
-<li><a id="orgeee00f0"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgeee00f0">
+<li><a id="org0b2132d"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org0b2132d">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org0070780"></a><span class="done DONE">DONE</span> Subsetting operators <code>[4/4]</code><br />
-<div class="outline-text-5" id="text-org0070780">
+<li><a id="org22b5cb4"></a><span class="done DONE">DONE</span> Subsetting operators <code>[4/4]</code><br />
+<div class="outline-text-5" id="text-org22b5cb4">
 </div>
 <ul class="org-ul">
-<li><a id="org5f95487"></a><span class="done DONE">DONE</span> Simplifying vs. preserving subsetting<br />
-<div class="outline-text-6" id="text-org5f95487">
+<li><a id="orgbc4e1b8"></a><span class="done DONE">DONE</span> Simplifying vs. preserving subsetting<br />
+<div class="outline-text-6" id="text-orgbc4e1b8">
 </div>
 </li>
-<li><a id="org73aea77"></a><span class="done DONE">DONE</span> \$<br />
-<div class="outline-text-6" id="text-org73aea77">
+<li><a id="org4b47bab"></a><span class="done DONE">DONE</span> \$<br />
+<div class="outline-text-6" id="text-org4b47bab">
 </div>
 </li>
-<li><a id="org0fca989"></a><span class="done DONE">DONE</span> Missing/out of bounds indices<br />
-<div class="outline-text-6" id="text-org0fca989">
+<li><a id="org92ded03"></a><span class="done DONE">DONE</span> Missing/out of bounds indices<br />
+<div class="outline-text-6" id="text-org92ded03">
 </div>
 </li>
-<li><a id="org74b349a"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org74b349a">
+<li><a id="orgb1e73af"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgb1e73af">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org89dede1"></a><span class="done DONE">DONE</span> Subsetting and assignment<br />
-<div class="outline-text-5" id="text-org89dede1">
+<li><a id="orgec1563a"></a><span class="done DONE">DONE</span> Subsetting and assignment<br />
+<div class="outline-text-5" id="text-orgec1563a">
 </div>
 </li>
-<li><a id="orgd559262"></a><span class="done DONE">DONE</span> Applications <code>[9/9]</code><br />
-<div class="outline-text-5" id="text-orgd559262">
+<li><a id="org26e42cd"></a><span class="done DONE">DONE</span> Applications <code>[9/9]</code><br />
+<div class="outline-text-5" id="text-org26e42cd">
 </div>
 <ul class="org-ul">
-<li><a id="org11fc2ec"></a><span class="done DONE">DONE</span> Lookup tables (character subsetting)<br />
-<div class="outline-text-6" id="text-org11fc2ec">
+<li><a id="org3045648"></a><span class="done DONE">DONE</span> Lookup tables (character subsetting)<br />
+<div class="outline-text-6" id="text-org3045648">
 </div>
 </li>
-<li><a id="org33f8d34"></a><span class="done DONE">DONE</span> Matching and merging by hand (integer subsetting)<br />
-<div class="outline-text-6" id="text-org33f8d34">
+<li><a id="orgcfd4321"></a><span class="done DONE">DONE</span> Matching and merging by hand (integer subsetting)<br />
+<div class="outline-text-6" id="text-orgcfd4321">
 </div>
 </li>
-<li><a id="orgbe38f4b"></a><span class="done DONE">DONE</span> Random samples/bootstrap (integer subsetting)<br />
-<div class="outline-text-6" id="text-orgbe38f4b">
+<li><a id="org2236973"></a><span class="done DONE">DONE</span> Random samples/bootstrap (integer subsetting)<br />
+<div class="outline-text-6" id="text-org2236973">
 </div>
 </li>
-<li><a id="org3f0b78a"></a><span class="done DONE">DONE</span> Ordering (integer subsetting)<br />
-<div class="outline-text-6" id="text-org3f0b78a">
+<li><a id="org6212c31"></a><span class="done DONE">DONE</span> Ordering (integer subsetting)<br />
+<div class="outline-text-6" id="text-org6212c31">
 </div>
 </li>
-<li><a id="org5353800"></a><span class="done DONE">DONE</span> Expanding aggregated counts (integer subsetting)<br />
-<div class="outline-text-6" id="text-org5353800">
+<li><a id="orga21e9a0"></a><span class="done DONE">DONE</span> Expanding aggregated counts (integer subsetting)<br />
+<div class="outline-text-6" id="text-orga21e9a0">
 </div>
 </li>
-<li><a id="org870ed5a"></a><span class="done DONE">DONE</span> Removing columns from data frames (character subsetting)<br />
-<div class="outline-text-6" id="text-org870ed5a">
+<li><a id="org67debf8"></a><span class="done DONE">DONE</span> Removing columns from data frames (character subsetting)<br />
+<div class="outline-text-6" id="text-org67debf8">
 </div>
 </li>
-<li><a id="org7d1c15f"></a><span class="done DONE">DONE</span> Selecting rows based on a condition (logical subsetting)<br />
-<div class="outline-text-6" id="text-org7d1c15f">
+<li><a id="orgff93559"></a><span class="done DONE">DONE</span> Selecting rows based on a condition (logical subsetting)<br />
+<div class="outline-text-6" id="text-orgff93559">
 </div>
 </li>
-<li><a id="org3caf293"></a><span class="done DONE">DONE</span> Boolean algebra vs. sets (logical &amp; integer subsetting)<br />
-<div class="outline-text-6" id="text-org3caf293">
+<li><a id="org2c3f979"></a><span class="done DONE">DONE</span> Boolean algebra vs. sets (logical &amp; integer subsetting)<br />
+<div class="outline-text-6" id="text-org2c3f979">
 </div>
 </li>
-<li><a id="orgcadb7a9"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgcadb7a9">
-</div>
-</li>
-</ul>
-</li>
-<li><a id="org78d4135"></a><span class="done DONE">DONE</span> Answers<br />
-<div class="outline-text-5" id="text-org78d4135">
+<li><a id="orga9d0a5f"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orga9d0a5f">
 </div>
 </li>
 </ul>
+</li>
+<li><a id="org20e30ce"></a><span class="done DONE">DONE</span> Answers<br />
+<div class="outline-text-5" id="text-org20e30ce">
 </div>
-<div id="outline-container-orga3e1c2e" class="outline-4">
-<h4 id="orga3e1c2e"><span class="done DONE">DONE</span> Vocabulary <code>[5/5]</code></h4>
-<div class="outline-text-4" id="text-orga3e1c2e">
+</li>
+</ul>
+</div>
+<div id="outline-container-orgdc83bf7" class="outline-4">
+<h4 id="orgdc83bf7"><span class="done DONE">DONE</span> Vocabulary <code>[5/5]</code></h4>
+<div class="outline-text-4" id="text-orgdc83bf7">
 </div>
 <ul class="org-ul">
-<li><a id="org4d76b26"></a><span class="done DONE">DONE</span> The basics<br />
-<div class="outline-text-5" id="text-org4d76b26">
+<li><a id="orgf1ac4e1"></a><span class="done DONE">DONE</span> The basics<br />
+<div class="outline-text-5" id="text-orgf1ac4e1">
 </div>
 </li>
-<li><a id="org1635aa6"></a><span class="done DONE">DONE</span> Common data structures<br />
-<div class="outline-text-5" id="text-org1635aa6">
+<li><a id="orgb806676"></a><span class="done DONE">DONE</span> Common data structures<br />
+<div class="outline-text-5" id="text-orgb806676">
 </div>
 </li>
-<li><a id="org74f3c7a"></a><span class="done DONE">DONE</span> Statistics<br />
-<div class="outline-text-5" id="text-org74f3c7a">
+<li><a id="org8b29390"></a><span class="done DONE">DONE</span> Statistics<br />
+<div class="outline-text-5" id="text-org8b29390">
 </div>
 </li>
-<li><a id="org0a8ed22"></a><span class="done DONE">DONE</span> Working with R<br />
-<div class="outline-text-5" id="text-org0a8ed22">
+<li><a id="org8776910"></a><span class="done DONE">DONE</span> Working with R<br />
+<div class="outline-text-5" id="text-org8776910">
 </div>
 </li>
-<li><a id="org38c922a"></a><span class="done DONE">DONE</span> I/O<br />
-<div class="outline-text-5" id="text-org38c922a">
+<li><a id="orgbb3b27a"></a><span class="done DONE">DONE</span> I/O<br />
+<div class="outline-text-5" id="text-orgbb3b27a">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org4aaa5ac" class="outline-4">
-<h4 id="org4aaa5ac"><span class="done DONE">DONE</span> Style guide <code>[3/3]</code></h4>
-<div class="outline-text-4" id="text-org4aaa5ac">
+<div id="outline-container-orga73565b" class="outline-4">
+<h4 id="orga73565b"><span class="done DONE">DONE</span> Style guide <code>[3/3]</code></h4>
+<div class="outline-text-4" id="text-orga73565b">
 <p>
 package formatR ?
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="orgb14f1d4"></a><span class="done DONE">DONE</span> Notation and naming <code>[2/2]</code><br />
-<div class="outline-text-5" id="text-orgb14f1d4">
+<li><a id="org5e61a41"></a><span class="done DONE">DONE</span> Notation and naming <code>[2/2]</code><br />
+<div class="outline-text-5" id="text-org5e61a41">
 </div>
 <ul class="org-ul">
-<li><a id="orgcb09acc"></a><span class="done DONE">DONE</span> File names<br />
-<div class="outline-text-6" id="text-orgcb09acc">
+<li><a id="orgd2997ba"></a><span class="done DONE">DONE</span> File names<br />
+<div class="outline-text-6" id="text-orgd2997ba">
 </div>
 </li>
-<li><a id="org71a4123"></a><span class="done DONE">DONE</span> Object names<br />
-<div class="outline-text-6" id="text-org71a4123">
+<li><a id="org7741cf2"></a><span class="done DONE">DONE</span> Object names<br />
+<div class="outline-text-6" id="text-org7741cf2">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgff9a398"></a><span class="done DONE">DONE</span> Syntax <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-orgff9a398">
+<li><a id="org1e4c4ae"></a><span class="done DONE">DONE</span> Syntax <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-org1e4c4ae">
 </div>
 <ul class="org-ul">
-<li><a id="org56ab42d"></a><span class="done DONE">DONE</span> Spacing<br />
-<div class="outline-text-6" id="text-org56ab42d">
+<li><a id="orgb36bf69"></a><span class="done DONE">DONE</span> Spacing<br />
+<div class="outline-text-6" id="text-orgb36bf69">
 </div>
 </li>
-<li><a id="org7e9786f"></a><span class="done DONE">DONE</span> Curly braces<br />
-<div class="outline-text-6" id="text-org7e9786f">
+<li><a id="org4786b43"></a><span class="done DONE">DONE</span> Curly braces<br />
+<div class="outline-text-6" id="text-org4786b43">
 </div>
 </li>
-<li><a id="org0a26412"></a><span class="done DONE">DONE</span> Line length<br />
-<div class="outline-text-6" id="text-org0a26412">
+<li><a id="org4c07725"></a><span class="done DONE">DONE</span> Line length<br />
+<div class="outline-text-6" id="text-org4c07725">
 </div>
 </li>
-<li><a id="org2a31370"></a><span class="done DONE">DONE</span> Indentation<br />
-<div class="outline-text-6" id="text-org2a31370">
+<li><a id="orga9d8500"></a><span class="done DONE">DONE</span> Indentation<br />
+<div class="outline-text-6" id="text-orga9d8500">
 </div>
 </li>
-<li><a id="orga3917ec"></a><span class="done DONE">DONE</span> Assignment<br />
-<div class="outline-text-6" id="text-orga3917ec">
+<li><a id="org2e1f1e2"></a><span class="done DONE">DONE</span> Assignment<br />
+<div class="outline-text-6" id="text-org2e1f1e2">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org6e20c01"></a><span class="done DONE">DONE</span> Organisation <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org6e20c01">
+<li><a id="org4aba876"></a><span class="done DONE">DONE</span> Organisation <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org4aba876">
 </div>
 <ul class="org-ul">
-<li><a id="orgbcf7c0d"></a><span class="done DONE">DONE</span> Commenting guidelines<br />
-<div class="outline-text-6" id="text-orgbcf7c0d">
+<li><a id="org8204f34"></a><span class="done DONE">DONE</span> Commenting guidelines<br />
+<div class="outline-text-6" id="text-org8204f34">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-orgedcec65" class="outline-4">
-<h4 id="orgedcec65"><span class="done DONE">DONE</span> Functions <code>[7/7]</code></h4>
-<div class="outline-text-4" id="text-orgedcec65">
+<div id="outline-container-orgb66bf8e" class="outline-4">
+<h4 id="orgb66bf8e"><span class="done DONE">DONE</span> Functions <code>[7/7]</code></h4>
+<div class="outline-text-4" id="text-orgb66bf8e">
 </div>
 <ul class="org-ul">
-<li><a id="org4b53498"></a><span class="done DONE">DONE</span> Function components <code>[2/2]</code><br />
-<div class="outline-text-5" id="text-org4b53498">
+<li><a id="orgc3feebf"></a><span class="done DONE">DONE</span> Function components <code>[2/2]</code><br />
+<div class="outline-text-5" id="text-orgc3feebf">
 </div>
 <ul class="org-ul">
-<li><a id="org539ce13"></a><span class="done DONE">DONE</span> Primitive functions<br />
-<div class="outline-text-6" id="text-org539ce13">
+<li><a id="org9a1f541"></a><span class="done DONE">DONE</span> Primitive functions<br />
+<div class="outline-text-6" id="text-org9a1f541">
 </div>
 </li>
-<li><a id="orgf4ef9cc"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgf4ef9cc">
+<li><a id="orgbcc4378"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgbcc4378">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org8a9e677"></a><span class="done DONE">DONE</span> Lexical scoping <code>[5/5]</code> ??<br />
-<div class="outline-text-5" id="text-org8a9e677">
+<li><a id="org333064e"></a><span class="done DONE">DONE</span> Lexical scoping <code>[5/5]</code> ??<br />
+<div class="outline-text-5" id="text-org333064e">
 </div>
 <ul class="org-ul">
-<li><a id="org7a70a27"></a><span class="done DONE">DONE</span> Name masking<br />
-<div class="outline-text-6" id="text-org7a70a27">
+<li><a id="org0ffd741"></a><span class="done DONE">DONE</span> Name masking<br />
+<div class="outline-text-6" id="text-org0ffd741">
 </div>
 </li>
-<li><a id="org82198d5"></a><span class="done DONE">DONE</span> Functions vs. variables<br />
-<div class="outline-text-6" id="text-org82198d5">
+<li><a id="org6210a8a"></a><span class="done DONE">DONE</span> Functions vs. variables<br />
+<div class="outline-text-6" id="text-org6210a8a">
 </div>
 </li>
-<li><a id="org67deee6"></a><span class="done DONE">DONE</span> A fresh start<br />
-<div class="outline-text-6" id="text-org67deee6">
+<li><a id="org56eaed0"></a><span class="done DONE">DONE</span> A fresh start<br />
+<div class="outline-text-6" id="text-org56eaed0">
 </div>
 </li>
-<li><a id="orgdcb6bc5"></a><span class="done DONE">DONE</span> Dynamic lookup<br />
-<div class="outline-text-6" id="text-orgdcb6bc5">
+<li><a id="org8458294"></a><span class="done DONE">DONE</span> Dynamic lookup<br />
+<div class="outline-text-6" id="text-org8458294">
 </div>
 </li>
-<li><a id="orgae6af70"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgae6af70">
+<li><a id="org1d1b175"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org1d1b175">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org9ac616e"></a><span class="done DONE">DONE</span> Every operation is a function call<br />
-<div class="outline-text-5" id="text-org9ac616e">
+<li><a id="org1dfc97d"></a><span class="done DONE">DONE</span> Every operation is a function call<br />
+<div class="outline-text-5" id="text-org1dfc97d">
 </div>
 </li>
-<li><a id="orga6926af"></a><span class="done DONE">DONE</span> Function arguments <code>[6/6]</code><br />
-<div class="outline-text-5" id="text-orga6926af">
+<li><a id="org93f5758"></a><span class="done DONE">DONE</span> Function arguments <code>[6/6]</code><br />
+<div class="outline-text-5" id="text-org93f5758">
 </div>
 <ul class="org-ul">
-<li><a id="org1d2e601"></a><span class="done DONE">DONE</span> Calling functions<br />
-<div class="outline-text-6" id="text-org1d2e601">
+<li><a id="orgffc6e8c"></a><span class="done DONE">DONE</span> Calling functions<br />
+<div class="outline-text-6" id="text-orgffc6e8c">
 </div>
 </li>
-<li><a id="orgda4aa69"></a><span class="done DONE">DONE</span> Calling a function given a list of arguments<br />
-<div class="outline-text-6" id="text-orgda4aa69">
+<li><a id="orgea6c4da"></a><span class="done DONE">DONE</span> Calling a function given a list of arguments<br />
+<div class="outline-text-6" id="text-orgea6c4da">
 </div>
 </li>
-<li><a id="org7b075fb"></a><span class="done DONE">DONE</span> Default and missing arguments<br />
-<div class="outline-text-6" id="text-org7b075fb">
+<li><a id="org45f7f7d"></a><span class="done DONE">DONE</span> Default and missing arguments<br />
+<div class="outline-text-6" id="text-org45f7f7d">
 </div>
 </li>
-<li><a id="orgdab8ca1"></a><span class="done DONE">DONE</span> Lazy evaluation<br />
-<div class="outline-text-6" id="text-orgdab8ca1">
+<li><a id="org07d9756"></a><span class="done DONE">DONE</span> Lazy evaluation<br />
+<div class="outline-text-6" id="text-org07d9756">
 </div>
 </li>
-<li><a id="org1d4120a"></a><span class="done DONE">DONE</span> ...<br />
-<div class="outline-text-6" id="text-org1d4120a">
+<li><a id="org6fa7937"></a><span class="done DONE">DONE</span> ...<br />
+<div class="outline-text-6" id="text-org6fa7937">
 </div>
 </li>
-<li><a id="orgaa17b9e"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgaa17b9e">
+<li><a id="org2196908"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org2196908">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org0cebd7b"></a><span class="done DONE">DONE</span> Special calls <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org0cebd7b">
+<li><a id="orge383851"></a><span class="done DONE">DONE</span> Special calls <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-orge383851">
 </div>
 <ul class="org-ul">
-<li><a id="org708ea89"></a><span class="done DONE">DONE</span> Infix functions<br />
-<div class="outline-text-6" id="text-org708ea89">
+<li><a id="org6cde867"></a><span class="done DONE">DONE</span> Infix functions<br />
+<div class="outline-text-6" id="text-org6cde867">
 </div>
 </li>
-<li><a id="org9295d56"></a><span class="done DONE">DONE</span> Replacement functions<br />
-<div class="outline-text-6" id="text-org9295d56">
+<li><a id="orgb9bdd89"></a><span class="done DONE">DONE</span> Replacement functions<br />
+<div class="outline-text-6" id="text-orgb9bdd89">
 </div>
 </li>
-<li><a id="org701b565"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org701b565">
+<li><a id="org8f698b6"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org8f698b6">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgf54e7b5"></a><span class="done DONE">DONE</span> Return values <code>[2/2]</code><br />
-<div class="outline-text-5" id="text-orgf54e7b5">
+<li><a id="orge645768"></a><span class="done DONE">DONE</span> Return values <code>[2/2]</code><br />
+<div class="outline-text-5" id="text-orge645768">
 </div>
 <ul class="org-ul">
-<li><a id="org04c544c"></a><span class="done DONE">DONE</span> On exit<br />
-<div class="outline-text-6" id="text-org04c544c">
+<li><a id="org1648f2b"></a><span class="done DONE">DONE</span> On exit<br />
+<div class="outline-text-6" id="text-org1648f2b">
 </div>
 </li>
-<li><a id="org2302dc4"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org2302dc4">
+<li><a id="orgc1cc16e"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgc1cc16e">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org0aa72da"></a><span class="done DONE">DONE</span> Quiz answers<br />
-<div class="outline-text-5" id="text-org0aa72da">
+<li><a id="orga4f1150"></a><span class="done DONE">DONE</span> Quiz answers<br />
+<div class="outline-text-5" id="text-orga4f1150">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org4f72eb2" class="outline-4">
-<h4 id="org4f72eb2"><span class="done DONE">DONE</span> OO field guide <code>[6/6]</code></h4>
-<div class="outline-text-4" id="text-org4f72eb2">
+<div id="outline-container-org79f9a1d" class="outline-4">
+<h4 id="org79f9a1d"><span class="done DONE">DONE</span> OO field guide <code>[6/6]</code></h4>
+<div class="outline-text-4" id="text-org79f9a1d">
 </div>
 <ul class="org-ul">
-<li><a id="org6aada76"></a><span class="done DONE">DONE</span> Base types<br />
-<div class="outline-text-5" id="text-org6aada76">
+<li><a id="org73fb6ca"></a><span class="done DONE">DONE</span> Base types<br />
+<div class="outline-text-5" id="text-org73fb6ca">
 </div>
 </li>
-<li><a id="orgac3a268"></a><span class="done DONE">DONE</span> S3 <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-orgac3a268">
+<li><a id="orga0d61c6"></a><span class="done DONE">DONE</span> S3 <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-orga0d61c6">
 </div>
 <ul class="org-ul">
-<li><a id="orgdb3c6d2"></a><span class="done DONE">DONE</span> Recognising objects, generic functions and methods<br />
-<div class="outline-text-6" id="text-orgdb3c6d2">
+<li><a id="orgc88dfa7"></a><span class="done DONE">DONE</span> Recognising objects, generic functions and methods<br />
+<div class="outline-text-6" id="text-orgc88dfa7">
 </div>
 </li>
-<li><a id="org1b4f20f"></a><span class="done DONE">DONE</span> Defining classes and creating objects<br />
-<div class="outline-text-6" id="text-org1b4f20f">
+<li><a id="org2a3e91d"></a><span class="done DONE">DONE</span> Defining classes and creating objects<br />
+<div class="outline-text-6" id="text-org2a3e91d">
 </div>
 </li>
-<li><a id="org17fa5fe"></a><span class="done DONE">DONE</span> Creating new methods and generics<br />
-<div class="outline-text-6" id="text-org17fa5fe">
+<li><a id="org6ea9d0e"></a><span class="done DONE">DONE</span> Creating new methods and generics<br />
+<div class="outline-text-6" id="text-org6ea9d0e">
 </div>
 </li>
-<li><a id="org9170188"></a><span class="done DONE">DONE</span> Method dispatch<br />
-<div class="outline-text-6" id="text-org9170188">
+<li><a id="orgbec3844"></a><span class="done DONE">DONE</span> Method dispatch<br />
+<div class="outline-text-6" id="text-orgbec3844">
 </div>
 </li>
-<li><a id="org33b9432"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org33b9432">
+<li><a id="orgef6ea79"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgef6ea79">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org1ebb6cf"></a><span class="done DONE">DONE</span> S4 <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org1ebb6cf">
+<li><a id="org7219823"></a><span class="done DONE">DONE</span> S4 <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-org7219823">
 </div>
 <ul class="org-ul">
-<li><a id="org123cdc4"></a><span class="done DONE">DONE</span> Recognising objects, generic functions, and methods<br />
-<div class="outline-text-6" id="text-org123cdc4">
+<li><a id="orgbbb37eb"></a><span class="done DONE">DONE</span> Recognising objects, generic functions, and methods<br />
+<div class="outline-text-6" id="text-orgbbb37eb">
 </div>
 </li>
-<li><a id="org64d3346"></a><span class="done DONE">DONE</span> Defining classes and creating objects<br />
-<div class="outline-text-6" id="text-org64d3346">
+<li><a id="orgf9308e3"></a><span class="done DONE">DONE</span> Defining classes and creating objects<br />
+<div class="outline-text-6" id="text-orgf9308e3">
 </div>
 </li>
-<li><a id="org78ca306"></a><span class="done DONE">DONE</span> Creating new methods and generics<br />
-<div class="outline-text-6" id="text-org78ca306">
+<li><a id="org63114f3"></a><span class="done DONE">DONE</span> Creating new methods and generics<br />
+<div class="outline-text-6" id="text-org63114f3">
 </div>
 </li>
-<li><a id="org90541e8"></a><span class="done DONE">DONE</span> Method dispatch<br />
-<div class="outline-text-6" id="text-org90541e8">
+<li><a id="org4bcaccf"></a><span class="done DONE">DONE</span> Method dispatch<br />
+<div class="outline-text-6" id="text-org4bcaccf">
 </div>
 </li>
-<li><a id="org52950dd"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org52950dd">
+<li><a id="org31e2460"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org31e2460">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org28ff9b6"></a><span class="done DONE">DONE</span> RC <code>[4/4]</code><br />
-<div class="outline-text-5" id="text-org28ff9b6">
+<li><a id="org58f7bbd"></a><span class="done DONE">DONE</span> RC <code>[4/4]</code><br />
+<div class="outline-text-5" id="text-org58f7bbd">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -740,466 +740,466 @@ package formatR ?
 </table>
 </div>
 <ul class="org-ul">
-<li><a id="org6d1173d"></a><span class="done DONE">DONE</span> Defining classes and creating objects<br />
-<div class="outline-text-6" id="text-org6d1173d">
+<li><a id="org6a8616b"></a><span class="done DONE">DONE</span> Defining classes and creating objects<br />
+<div class="outline-text-6" id="text-org6a8616b">
 </div>
 </li>
-<li><a id="org5a68f9d"></a><span class="done DONE">DONE</span> Recognising objects and methods<br />
-<div class="outline-text-6" id="text-org5a68f9d">
+<li><a id="org8bf5c1f"></a><span class="done DONE">DONE</span> Recognising objects and methods<br />
+<div class="outline-text-6" id="text-org8bf5c1f">
 </div>
 </li>
-<li><a id="orgc02b54c"></a><span class="done DONE">DONE</span> Method dispatch<br />
-<div class="outline-text-6" id="text-orgc02b54c">
+<li><a id="org94ebf50"></a><span class="done DONE">DONE</span> Method dispatch<br />
+<div class="outline-text-6" id="text-org94ebf50">
 </div>
 </li>
-<li><a id="orgdc959bf"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgdc959bf">
+<li><a id="orga2dd60d"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orga2dd60d">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org3d77ee1"></a><span class="done DONE">DONE</span> Picking a system<br />
-<div class="outline-text-5" id="text-org3d77ee1">
+<li><a id="org0f0dca8"></a><span class="done DONE">DONE</span> Picking a system<br />
+<div class="outline-text-5" id="text-org0f0dca8">
 </div>
 </li>
-<li><a id="org0999456"></a><span class="done DONE">DONE</span> Quiz answers<br />
-<div class="outline-text-5" id="text-org0999456">
+<li><a id="org1c29726"></a><span class="done DONE">DONE</span> Quiz answers<br />
+<div class="outline-text-5" id="text-org1c29726">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org0b4b680" class="outline-4">
-<h4 id="org0b4b680"><span class="done DONE">DONE</span> Environments<code>[6/6]</code></h4>
-<div class="outline-text-4" id="text-org0b4b680">
+<div id="outline-container-org87a7d2e" class="outline-4">
+<h4 id="org87a7d2e"><span class="done DONE">DONE</span> Environments<code>[6/6]</code></h4>
+<div class="outline-text-4" id="text-org87a7d2e">
 </div>
 <ul class="org-ul">
-<li><a id="org9796153"></a><span class="done DONE">DONE</span> Environment basics <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org9796153">
+<li><a id="org4ac4294"></a><span class="done DONE">DONE</span> Environment basics <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org4ac4294">
 </div>
 <ul class="org-ul">
-<li><a id="org73d7ab5"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org73d7ab5">
+<li><a id="org0465afa"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org0465afa">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org1b37be4"></a><span class="done DONE">DONE</span> Recursing over environments <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org1b37be4">
+<li><a id="org0708f40"></a><span class="done DONE">DONE</span> Recursing over environments <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org0708f40">
 </div>
 <ul class="org-ul">
-<li><a id="orgc2f1d1b"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgc2f1d1b">
+<li><a id="orgd6274ce"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgd6274ce">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org82b0b58"></a><span class="done DONE">DONE</span> Function environments <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org82b0b58">
+<li><a id="org90691ec"></a><span class="done DONE">DONE</span> Function environments <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-org90691ec">
 </div>
 <ul class="org-ul">
-<li><a id="orgc2dfa7e"></a><span class="done DONE">DONE</span> The enclosing environment<br />
-<div class="outline-text-6" id="text-orgc2dfa7e">
+<li><a id="org13ef9e2"></a><span class="done DONE">DONE</span> The enclosing environment<br />
+<div class="outline-text-6" id="text-org13ef9e2">
 </div>
 </li>
-<li><a id="orgb47fbf7"></a><span class="done DONE">DONE</span> Binding environments<br />
-<div class="outline-text-6" id="text-orgb47fbf7">
+<li><a id="org0a56ed6"></a><span class="done DONE">DONE</span> Binding environments<br />
+<div class="outline-text-6" id="text-org0a56ed6">
 </div>
 </li>
-<li><a id="org81190ea"></a><span class="done DONE">DONE</span> Execution environments<br />
-<div class="outline-text-6" id="text-org81190ea">
+<li><a id="org3df0922"></a><span class="done DONE">DONE</span> Execution environments<br />
+<div class="outline-text-6" id="text-org3df0922">
 </div>
 </li>
-<li><a id="orgbdfe543"></a><span class="done DONE">DONE</span> Calling environments<br />
-<div class="outline-text-6" id="text-orgbdfe543">
+<li><a id="orgba9a073"></a><span class="done DONE">DONE</span> Calling environments<br />
+<div class="outline-text-6" id="text-orgba9a073">
 </div>
 </li>
-<li><a id="org6afd5bc"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org6afd5bc">
+<li><a id="orgb04a161"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgb04a161">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org3341323"></a><span class="done DONE">DONE</span> Binding names to values <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org3341323">
+<li><a id="orge313fb0"></a><span class="done DONE">DONE</span> Binding names to values <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orge313fb0">
 </div>
 <ul class="org-ul">
-<li><a id="org35737bc"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org35737bc">
+<li><a id="org07abf84"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org07abf84">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org90c27bd"></a><span class="done DONE">DONE</span> Explicit environments <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org90c27bd">
+<li><a id="orgc79ffa1"></a><span class="done DONE">DONE</span> Explicit environments <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-orgc79ffa1">
 </div>
 <ul class="org-ul">
-<li><a id="org8599e33"></a><span class="done DONE">DONE</span> Avoiding copies<br />
-<div class="outline-text-6" id="text-org8599e33">
+<li><a id="org54970b7"></a><span class="done DONE">DONE</span> Avoiding copies<br />
+<div class="outline-text-6" id="text-org54970b7">
 </div>
 </li>
-<li><a id="org3496fd1"></a><span class="done DONE">DONE</span> Package state<br />
-<div class="outline-text-6" id="text-org3496fd1">
+<li><a id="orgd71a66d"></a><span class="done DONE">DONE</span> Package state<br />
+<div class="outline-text-6" id="text-orgd71a66d">
 </div>
 </li>
-<li><a id="org17a555b"></a><span class="done DONE">DONE</span> As a hashmap<br />
-<div class="outline-text-6" id="text-org17a555b">
+<li><a id="orgdc36366"></a><span class="done DONE">DONE</span> As a hashmap<br />
+<div class="outline-text-6" id="text-orgdc36366">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org824952e"></a><span class="done DONE">DONE</span> Quiz answers<br />
-<div class="outline-text-5" id="text-org824952e">
+<li><a id="org03e40c6"></a><span class="done DONE">DONE</span> Quiz answers<br />
+<div class="outline-text-5" id="text-org03e40c6">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org95fc119" class="outline-4">
-<h4 id="org95fc119"><span class="done DONE">DONE</span> Debugging, condition handling, and defensive programming <code>[5/5]</code></h4>
-<div class="outline-text-4" id="text-org95fc119">
+<div id="outline-container-orgb5985bb" class="outline-4">
+<h4 id="orgb5985bb"><span class="done DONE">DONE</span> Debugging, condition handling, and defensive programming <code>[5/5]</code></h4>
+<div class="outline-text-4" id="text-orgb5985bb">
 </div>
 <ul class="org-ul">
-<li><a id="org06fdb05"></a><span class="done DONE">DONE</span> Debugging techniques<br />
-<div class="outline-text-5" id="text-org06fdb05">
+<li><a id="org4aaade0"></a><span class="done DONE">DONE</span> Debugging techniques<br />
+<div class="outline-text-5" id="text-org4aaade0">
 </div>
 </li>
-<li><a id="org42ca4ff"></a><span class="done DONE">DONE</span> Debugging tools <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org42ca4ff">
+<li><a id="org47fe514"></a><span class="done DONE">DONE</span> Debugging tools <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-org47fe514">
 </div>
 <ul class="org-ul">
-<li><a id="org48a29fa"></a><span class="done DONE">DONE</span> Determining the sequence of calls<br />
-<div class="outline-text-6" id="text-org48a29fa">
+<li><a id="orga4a3e26"></a><span class="done DONE">DONE</span> Determining the sequence of calls<br />
+<div class="outline-text-6" id="text-orga4a3e26">
 </div>
 </li>
-<li><a id="org4bd242d"></a><span class="done DONE">DONE</span> Browsing on error<br />
-<div class="outline-text-6" id="text-org4bd242d">
+<li><a id="orgcaaa037"></a><span class="done DONE">DONE</span> Browsing on error<br />
+<div class="outline-text-6" id="text-orgcaaa037">
 </div>
 </li>
-<li><a id="orgfe15304"></a><span class="done DONE">DONE</span> Browsing arbitrary code<br />
-<div class="outline-text-6" id="text-orgfe15304">
+<li><a id="orga491bad"></a><span class="done DONE">DONE</span> Browsing arbitrary code<br />
+<div class="outline-text-6" id="text-orga491bad">
 </div>
 </li>
-<li><a id="org8aa2de9"></a><span class="done DONE">DONE</span> The call stack: traceback(), where, and recover()<br />
-<div class="outline-text-6" id="text-org8aa2de9">
+<li><a id="org9a9ff0e"></a><span class="done DONE">DONE</span> The call stack: traceback(), where, and recover()<br />
+<div class="outline-text-6" id="text-org9a9ff0e">
 </div>
 </li>
-<li><a id="org6f82df4"></a><span class="done DONE">DONE</span> Other types of failure<br />
-<div class="outline-text-6" id="text-org6f82df4">
+<li><a id="org1cfda38"></a><span class="done DONE">DONE</span> Other types of failure<br />
+<div class="outline-text-6" id="text-org1cfda38">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org6b31dc2"></a><span class="done DONE">DONE</span> Condition handling <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org6b31dc2">
+<li><a id="org559a9fc"></a><span class="done DONE">DONE</span> Condition handling <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-org559a9fc">
 </div>
 <ul class="org-ul">
-<li><a id="orgaa3cca0"></a><span class="done DONE">DONE</span> Ignore errors with try<br />
-<div class="outline-text-6" id="text-orgaa3cca0">
+<li><a id="org56d20aa"></a><span class="done DONE">DONE</span> Ignore errors with try<br />
+<div class="outline-text-6" id="text-org56d20aa">
 </div>
 </li>
-<li><a id="orgcf52fd0"></a><span class="done DONE">DONE</span> Handle conditions with tryCatch()<br />
-<div class="outline-text-6" id="text-orgcf52fd0">
+<li><a id="orga89910a"></a><span class="done DONE">DONE</span> Handle conditions with tryCatch()<br />
+<div class="outline-text-6" id="text-orga89910a">
 </div>
 </li>
-<li><a id="org0f2379b"></a><span class="done DONE">DONE</span> withCallingHandlers()<br />
-<div class="outline-text-6" id="text-org0f2379b">
+<li><a id="orgbb052ea"></a><span class="done DONE">DONE</span> withCallingHandlers()<br />
+<div class="outline-text-6" id="text-orgbb052ea">
 </div>
 </li>
-<li><a id="orgf9610db"></a><span class="done DONE">DONE</span> Custom signal classes<br />
-<div class="outline-text-6" id="text-orgf9610db">
+<li><a id="org592b25e"></a><span class="done DONE">DONE</span> Custom signal classes<br />
+<div class="outline-text-6" id="text-org592b25e">
 </div>
 </li>
-<li><a id="orge756a5b"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orge756a5b">
+<li><a id="org7fbb0e9"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org7fbb0e9">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org75f20ae"></a><span class="done DONE">DONE</span> Defensive programming <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org75f20ae">
+<li><a id="orgf34b3b7"></a><span class="done DONE">DONE</span> Defensive programming <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgf34b3b7">
 </div>
 <ul class="org-ul">
-<li><a id="orga4d6e8b"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orga4d6e8b">
+<li><a id="org8a4282c"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org8a4282c">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org93c6f36"></a><span class="done DONE">DONE</span> Quiz answers<br />
-<div class="outline-text-5" id="text-org93c6f36">
+<li><a id="orgc3b7ce2"></a><span class="done DONE">DONE</span> Quiz answers<br />
+<div class="outline-text-5" id="text-orgc3b7ce2">
 </div>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7329f47" class="outline-3">
-<h3 id="org7329f47"><span class="done DONE">DONE</span> Functional programming<code>[3/3]</code></h3>
-<div class="outline-text-3" id="text-org7329f47">
+<div id="outline-container-orgc34fbb2" class="outline-3">
+<h3 id="orgc34fbb2"><span class="done DONE">DONE</span> Functional programming<code>[3/3]</code></h3>
+<div class="outline-text-3" id="text-orgc34fbb2">
 </div>
-<div id="outline-container-org0a57189" class="outline-4">
-<h4 id="org0a57189"><span class="done DONE">DONE</span> Functional programming<code>[5/5]</code></h4>
-<div class="outline-text-4" id="text-org0a57189">
+<div id="outline-container-org940ed7f" class="outline-4">
+<h4 id="org940ed7f"><span class="done DONE">DONE</span> Functional programming<code>[5/5]</code></h4>
+<div class="outline-text-4" id="text-org940ed7f">
 </div>
 <ul class="org-ul">
-<li><a id="org6925889"></a><span class="done DONE">DONE</span> Motivation<br />
-<div class="outline-text-5" id="text-org6925889">
+<li><a id="orgefd027e"></a><span class="done DONE">DONE</span> Motivation<br />
+<div class="outline-text-5" id="text-orgefd027e">
 </div>
 </li>
-<li><a id="orgb7c6d94"></a><span class="done DONE">DONE</span> Anonymous functions <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgb7c6d94">
+<li><a id="org73091cf"></a><span class="done DONE">DONE</span> Anonymous functions <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org73091cf">
 </div>
 <ul class="org-ul">
-<li><a id="org595d8b8"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org595d8b8">
+<li><a id="orgfc08924"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgfc08924">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org1afe8f1"></a><span class="done DONE">DONE</span> Closures<code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org1afe8f1">
+<li><a id="orgfab1cc7"></a><span class="done DONE">DONE</span> Closures<code>[3/3]</code><br />
+<div class="outline-text-5" id="text-orgfab1cc7">
 </div>
 <ul class="org-ul">
-<li><a id="orgb5689ec"></a><span class="done DONE">DONE</span> Function factories<br />
-<div class="outline-text-6" id="text-orgb5689ec">
+<li><a id="orgb3df4cf"></a><span class="done DONE">DONE</span> Function factories<br />
+<div class="outline-text-6" id="text-orgb3df4cf">
 </div>
 </li>
-<li><a id="orgf0a65fc"></a><span class="done DONE">DONE</span> Mutable state<br />
-<div class="outline-text-6" id="text-orgf0a65fc">
+<li><a id="org739d151"></a><span class="done DONE">DONE</span> Mutable state<br />
+<div class="outline-text-6" id="text-org739d151">
 </div>
 </li>
-<li><a id="org10550df"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org10550df">
+<li><a id="orge5663b1"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orge5663b1">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org1ab9dbd"></a><span class="done DONE">DONE</span> Lists of functions <code>[2/2]</code><br />
-<div class="outline-text-5" id="text-org1ab9dbd">
+<li><a id="orgd53929c"></a><span class="done DONE">DONE</span> Lists of functions <code>[2/2]</code><br />
+<div class="outline-text-5" id="text-orgd53929c">
 </div>
 <ul class="org-ul">
-<li><a id="orgf046702"></a><span class="done DONE">DONE</span> Moving lists of functions to the global environment<br />
-<div class="outline-text-6" id="text-orgf046702">
+<li><a id="org19a2829"></a><span class="done DONE">DONE</span> Moving lists of functions to the global environment<br />
+<div class="outline-text-6" id="text-org19a2829">
 </div>
 </li>
-<li><a id="org53f127f"></a><span class="done DONE">DONE</span> exercises<br />
-<div class="outline-text-6" id="text-org53f127f">
+<li><a id="org76999c1"></a><span class="done DONE">DONE</span> exercises<br />
+<div class="outline-text-6" id="text-org76999c1">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orga2a63d3"></a><span class="done DONE">DONE</span> Case study: numerical integration <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orga2a63d3">
+<li><a id="org0cabe87"></a><span class="done DONE">DONE</span> Case study: numerical integration <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org0cabe87">
 </div>
 <ul class="org-ul">
-<li><a id="org353e2dc"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org353e2dc">
+<li><a id="org7cc9a18"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org7cc9a18">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-org049b768" class="outline-4">
-<h4 id="org049b768"><span class="done DONE">DONE</span> Functionals<code>[7/7]</code></h4>
-<div class="outline-text-4" id="text-org049b768">
+<div id="outline-container-org69c7b10" class="outline-4">
+<h4 id="org69c7b10"><span class="done DONE">DONE</span> Functionals<code>[7/7]</code></h4>
+<div class="outline-text-4" id="text-org69c7b10">
 </div>
 <ul class="org-ul">
-<li><a id="orgc57b79c"></a><span class="done DONE">DONE</span> My first functional: lapply()<code>[2/2]</code><br />
-<div class="outline-text-5" id="text-orgc57b79c">
+<li><a id="orge84c0ed"></a><span class="done DONE">DONE</span> My first functional: lapply()<code>[2/2]</code><br />
+<div class="outline-text-5" id="text-orge84c0ed">
 </div>
 <ul class="org-ul">
-<li><a id="orgd8e845f"></a><span class="done DONE">DONE</span> Looping patterns<br />
-<div class="outline-text-6" id="text-orgd8e845f">
+<li><a id="org8bd1de0"></a><span class="done DONE">DONE</span> Looping patterns<br />
+<div class="outline-text-6" id="text-org8bd1de0">
 </div>
 </li>
-<li><a id="orgfe4bfdb"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgfe4bfdb">
+<li><a id="org767833b"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org767833b">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org18dfd2c"></a><span class="done DONE">DONE</span> For loop functionals: friends of lapply()<code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org18dfd2c">
+<li><a id="orga56d030"></a><span class="done DONE">DONE</span> For loop functionals: friends of lapply()<code>[5/5]</code><br />
+<div class="outline-text-5" id="text-orga56d030">
 </div>
 <ul class="org-ul">
-<li><a id="org55759aa"></a><span class="done DONE">DONE</span> Vector  output: sapply and vapply<br />
-<div class="outline-text-6" id="text-org55759aa">
+<li><a id="org996d9c4"></a><span class="done DONE">DONE</span> Vector  output: sapply and vapply<br />
+<div class="outline-text-6" id="text-org996d9c4">
 </div>
 </li>
-<li><a id="org69e3153"></a><span class="done DONE">DONE</span> Multiple inputs: Map (and mapply)<br />
-<div class="outline-text-6" id="text-org69e3153">
+<li><a id="org34c8bec"></a><span class="done DONE">DONE</span> Multiple inputs: Map (and mapply)<br />
+<div class="outline-text-6" id="text-org34c8bec">
 </div>
 </li>
-<li><a id="org41789be"></a><span class="done DONE">DONE</span> Rolling computations<br />
-<div class="outline-text-6" id="text-org41789be">
+<li><a id="orgb653d74"></a><span class="done DONE">DONE</span> Rolling computations<br />
+<div class="outline-text-6" id="text-orgb653d74">
 </div>
 </li>
-<li><a id="org4e4be7a"></a><span class="done DONE">DONE</span> Parallelisation<br />
-<div class="outline-text-6" id="text-org4e4be7a">
+<li><a id="org70eec43"></a><span class="done DONE">DONE</span> Parallelisation<br />
+<div class="outline-text-6" id="text-org70eec43">
 </div>
 </li>
-<li><a id="org68038a5"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org68038a5">
+<li><a id="org405382a"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org405382a">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgd9e84ea"></a><span class="done DONE">DONE</span> Manipulating matrices and data frames <code>[4/4]</code><br />
-<div class="outline-text-5" id="text-orgd9e84ea">
+<li><a id="org07b7ee8"></a><span class="done DONE">DONE</span> Manipulating matrices and data frames <code>[4/4]</code><br />
+<div class="outline-text-5" id="text-org07b7ee8">
 </div>
 <ul class="org-ul">
-<li><a id="orga30d717"></a><span class="done DONE">DONE</span> Matrix and array operations<br />
-<div class="outline-text-6" id="text-orga30d717">
+<li><a id="orgb148af8"></a><span class="done DONE">DONE</span> Matrix and array operations<br />
+<div class="outline-text-6" id="text-orgb148af8">
 </div>
 </li>
-<li><a id="org8c5203e"></a><span class="done DONE">DONE</span> Group apply<br />
-<div class="outline-text-6" id="text-org8c5203e">
+<li><a id="orgf3dd4c8"></a><span class="done DONE">DONE</span> Group apply<br />
+<div class="outline-text-6" id="text-orgf3dd4c8">
 </div>
 </li>
-<li><a id="orgb296f95"></a><span class="done DONE">DONE</span> The plyr package<br />
-<div class="outline-text-6" id="text-orgb296f95">
+<li><a id="orged013d5"></a><span class="done DONE">DONE</span> The plyr package<br />
+<div class="outline-text-6" id="text-orged013d5">
 </div>
 </li>
-<li><a id="orgab281bb"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgab281bb">
+<li><a id="org3390991"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org3390991">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org5c80234"></a><span class="done DONE">DONE</span> Manipulating lists <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org5c80234">
+<li><a id="org99fddf2"></a><span class="done DONE">DONE</span> Manipulating lists <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org99fddf2">
 </div>
 <ul class="org-ul">
-<li><a id="orgb03c3bb"></a><span class="done DONE">DONE</span> Reduce()<br />
-<div class="outline-text-6" id="text-orgb03c3bb">
+<li><a id="orgd8d0520"></a><span class="done DONE">DONE</span> Reduce()<br />
+<div class="outline-text-6" id="text-orgd8d0520">
 </div>
 </li>
-<li><a id="org0545cad"></a><span class="done DONE">DONE</span> Predicate functionals<br />
-<div class="outline-text-6" id="text-org0545cad">
+<li><a id="orga381612"></a><span class="done DONE">DONE</span> Predicate functionals<br />
+<div class="outline-text-6" id="text-orga381612">
 </div>
 </li>
-<li><a id="orgb1d66bd"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgb1d66bd">
+<li><a id="orgc66ad5e"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgc66ad5e">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgdff1e92"></a><span class="done DONE">DONE</span> Mathematical functionals <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgdff1e92">
+<li><a id="org70a39cc"></a><span class="done DONE">DONE</span> Mathematical functionals <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org70a39cc">
 </div>
 <ul class="org-ul">
-<li><a id="orgeb10093"></a><span class="done DONE">DONE</span> exercises<br />
-<div class="outline-text-6" id="text-orgeb10093">
+<li><a id="org8a2f42a"></a><span class="done DONE">DONE</span> exercises<br />
+<div class="outline-text-6" id="text-org8a2f42a">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgd964b04"></a><span class="done DONE">DONE</span> Loops that should be left as is<code>[3/3]</code><br />
-<div class="outline-text-5" id="text-orgd964b04">
+<li><a id="org7f1741d"></a><span class="done DONE">DONE</span> Loops that should be left as is<code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org7f1741d">
 </div>
 <ul class="org-ul">
-<li><a id="org2fded53"></a><span class="done DONE">DONE</span> Modifying in place<br />
-<div class="outline-text-6" id="text-org2fded53">
+<li><a id="orgacfc81d"></a><span class="done DONE">DONE</span> Modifying in place<br />
+<div class="outline-text-6" id="text-orgacfc81d">
 </div>
 </li>
-<li><a id="orgdb6abd8"></a><span class="done DONE">DONE</span> Recursive relationships<br />
-<div class="outline-text-6" id="text-orgdb6abd8">
+<li><a id="org726164c"></a><span class="done DONE">DONE</span> Recursive relationships<br />
+<div class="outline-text-6" id="text-org726164c">
 </div>
 </li>
-<li><a id="orgc6c8dcc"></a><span class="done DONE">DONE</span> While loops<br />
-<div class="outline-text-6" id="text-orgc6c8dcc">
+<li><a id="org407bc8d"></a><span class="done DONE">DONE</span> While loops<br />
+<div class="outline-text-6" id="text-org407bc8d">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orga61c387"></a><span class="done DONE">DONE</span> A family of functions <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orga61c387">
+<li><a id="org7058734"></a><span class="done DONE">DONE</span> A family of functions <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org7058734">
 </div>
 <ul class="org-ul">
-<li><a id="org91e406d"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org91e406d">
+<li><a id="org811b383"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org811b383">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-org4afab05" class="outline-4">
-<h4 id="org4afab05"><span class="done DONE">DONE</span> Function operators <code>[4/4]</code></h4>
-<div class="outline-text-4" id="text-org4afab05">
+<div id="outline-container-org6026ab5" class="outline-4">
+<h4 id="org6026ab5"><span class="done DONE">DONE</span> Function operators <code>[4/4]</code></h4>
+<div class="outline-text-4" id="text-org6026ab5">
 </div>
 <ul class="org-ul">
-<li><a id="org5aadcc7"></a><span class="done DONE">DONE</span> Behavioural FOs <code>[4/4]</code><br />
-<div class="outline-text-5" id="text-org5aadcc7">
+<li><a id="org63c38a4"></a><span class="done DONE">DONE</span> Behavioural FOs <code>[4/4]</code><br />
+<div class="outline-text-5" id="text-org63c38a4">
 </div>
 <ul class="org-ul">
-<li><a id="org1be61e2"></a><span class="done DONE">DONE</span> Memoisation<br />
-<div class="outline-text-6" id="text-org1be61e2">
+<li><a id="org2735294"></a><span class="done DONE">DONE</span> Memoisation<br />
+<div class="outline-text-6" id="text-org2735294">
 </div>
 </li>
-<li><a id="org1af1031"></a><span class="done DONE">DONE</span> Capturing function invocations<br />
-<div class="outline-text-6" id="text-org1af1031">
+<li><a id="orgfabfd24"></a><span class="done DONE">DONE</span> Capturing function invocations<br />
+<div class="outline-text-6" id="text-orgfabfd24">
 </div>
 </li>
-<li><a id="org643da1e"></a><span class="done DONE">DONE</span> Laziness<br />
-<div class="outline-text-6" id="text-org643da1e">
+<li><a id="org6de1793"></a><span class="done DONE">DONE</span> Laziness<br />
+<div class="outline-text-6" id="text-org6de1793">
 </div>
 </li>
-<li><a id="org4490aef"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org4490aef">
+<li><a id="org24fa984"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org24fa984">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org5e42bb4"></a><span class="done DONE">DONE</span> Output FOs <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org5e42bb4">
+<li><a id="org603ac0e"></a><span class="done DONE">DONE</span> Output FOs <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org603ac0e">
 </div>
 <ul class="org-ul">
-<li><a id="org0cfde17"></a><span class="done DONE">DONE</span> Minor modifications<br />
-<div class="outline-text-6" id="text-org0cfde17">
+<li><a id="orgbeea042"></a><span class="done DONE">DONE</span> Minor modifications<br />
+<div class="outline-text-6" id="text-orgbeea042">
 </div>
 </li>
-<li><a id="org85b9fa1"></a><span class="done DONE">DONE</span> Changing what a function does<br />
-<div class="outline-text-6" id="text-org85b9fa1">
+<li><a id="orgc4420f8"></a><span class="done DONE">DONE</span> Changing what a function does<br />
+<div class="outline-text-6" id="text-orgc4420f8">
 </div>
 </li>
-<li><a id="org88b8fe7"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org88b8fe7">
+<li><a id="org49a204a"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org49a204a">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org12d4e7c"></a><span class="done DONE">DONE</span> Input FOs <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org12d4e7c">
+<li><a id="orgf27d122"></a><span class="done DONE">DONE</span> Input FOs <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-orgf27d122">
 </div>
 <ul class="org-ul">
-<li><a id="org9b3e5e6"></a><span class="done DONE">DONE</span> Prefilling function arguments: partial function application<br />
-<div class="outline-text-6" id="text-org9b3e5e6">
+<li><a id="org78e4cd4"></a><span class="done DONE">DONE</span> Prefilling function arguments: partial function application<br />
+<div class="outline-text-6" id="text-org78e4cd4">
 </div>
 </li>
-<li><a id="orgb72c339"></a><span class="done DONE">DONE</span> Changing input types<br />
-<div class="outline-text-6" id="text-orgb72c339">
+<li><a id="org6156d85"></a><span class="done DONE">DONE</span> Changing input types<br />
+<div class="outline-text-6" id="text-org6156d85">
 </div>
 </li>
-<li><a id="org5901f08"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org5901f08">
+<li><a id="org92daf92"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org92daf92">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgb2428cd"></a><span class="done DONE">DONE</span> Combining FOs <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-orgb2428cd">
+<li><a id="orga5e88e2"></a><span class="done DONE">DONE</span> Combining FOs <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-orga5e88e2">
 </div>
 <ul class="org-ul">
-<li><a id="org0c1950e"></a><span class="done DONE">DONE</span> Function composition<br />
-<div class="outline-text-6" id="text-org0c1950e">
+<li><a id="org31eb3ac"></a><span class="done DONE">DONE</span> Function composition<br />
+<div class="outline-text-6" id="text-org31eb3ac">
 </div>
 </li>
-<li><a id="org5c1eac7"></a><span class="done DONE">DONE</span> Logical predicates and boolean algebra<br />
-<div class="outline-text-6" id="text-org5c1eac7">
+<li><a id="org61b516e"></a><span class="done DONE">DONE</span> Logical predicates and boolean algebra<br />
+<div class="outline-text-6" id="text-org61b516e">
 </div>
 </li>
-<li><a id="org6c65f30"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org6c65f30">
+<li><a id="org7977c77"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org7977c77">
 </div>
 </li>
 </ul>
@@ -1207,251 +1207,251 @@ package formatR ?
 </ul>
 </div>
 </div>
-<div id="outline-container-org126985c" class="outline-3">
-<h3 id="org126985c"><span class="done DONE">DONE</span> Computing on the language <code>[2/2]</code></h3>
-<div class="outline-text-3" id="text-org126985c">
+<div id="outline-container-org61d6774" class="outline-3">
+<h3 id="org61d6774"><span class="done DONE">DONE</span> Computing on the language <code>[2/2]</code></h3>
+<div class="outline-text-3" id="text-org61d6774">
 </div>
-<div id="outline-container-org0cf6a7f" class="outline-4">
-<h4 id="org0cf6a7f">Non-standard evaluation <code>[6/6]</code></h4>
-<div class="outline-text-4" id="text-org0cf6a7f">
+<div id="outline-container-org9fc5d01" class="outline-4">
+<h4 id="org9fc5d01">Non-standard evaluation <code>[6/6]</code></h4>
+<div class="outline-text-4" id="text-org9fc5d01">
 </div>
 <ul class="org-ul">
-<li><a id="org634a25b"></a><span class="done DONE">DONE</span> Capturing expressions <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org634a25b">
+<li><a id="org165d75c"></a><span class="done DONE">DONE</span> Capturing expressions <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org165d75c">
 </div>
 <ul class="org-ul">
-<li><a id="org88e3b0c"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org88e3b0c">
+<li><a id="org9ed7504"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org9ed7504">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgded4087"></a><span class="done DONE">DONE</span> Non-standard evaluation in subset <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgded4087">
+<li><a id="orgea8822f"></a><span class="done DONE">DONE</span> Non-standard evaluation in subset <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgea8822f">
 </div>
 <ul class="org-ul">
-<li><a id="orgdb11d05"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgdb11d05">
+<li><a id="org99bd0e7"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org99bd0e7">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgee4f523"></a><span class="done DONE">DONE</span> Scoping issues <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgee4f523">
+<li><a id="org0302c45"></a><span class="done DONE">DONE</span> Scoping issues <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org0302c45">
 </div>
 <ul class="org-ul">
-<li><a id="orgcdcd30a"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgcdcd30a">
+<li><a id="org9c2db8b"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org9c2db8b">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org0942f5b"></a><span class="done DONE">DONE</span> Calling from another function <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org0942f5b">
+<li><a id="orgc212326"></a><span class="done DONE">DONE</span> Calling from another function <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgc212326">
 </div>
 <ul class="org-ul">
-<li><a id="org6e99d5e"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org6e99d5e">
+<li><a id="org2369dcd"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org2369dcd">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgb2d2127"></a><span class="done DONE">DONE</span> Substitute <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-orgb2d2127">
+<li><a id="org0a8021c"></a><span class="done DONE">DONE</span> Substitute <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org0a8021c">
 </div>
 <ul class="org-ul">
-<li><a id="org6cde15a"></a><span class="done DONE">DONE</span> Adding an escape hatch to substitute<br />
-<div class="outline-text-6" id="text-org6cde15a">
+<li><a id="org5297874"></a><span class="done DONE">DONE</span> Adding an escape hatch to substitute<br />
+<div class="outline-text-6" id="text-org5297874">
 </div>
 </li>
-<li><a id="orgb6dc6a7"></a><span class="done DONE">DONE</span> Capturing unevaluated ...<br />
-<div class="outline-text-6" id="text-orgb6dc6a7">
+<li><a id="org1e96290"></a><span class="done DONE">DONE</span> Capturing unevaluated ...<br />
+<div class="outline-text-6" id="text-org1e96290">
 </div>
 </li>
-<li><a id="org75352c9"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org75352c9">
+<li><a id="orgad568df"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgad568df">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org5d94ebc"></a><span class="done DONE">DONE</span> The downsides of non-standard evaluation <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org5d94ebc">
+<li><a id="org562f76d"></a><span class="done DONE">DONE</span> The downsides of non-standard evaluation <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org562f76d">
 </div>
 <ul class="org-ul">
-<li><a id="org89025c9"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org89025c9">
+<li><a id="org1ef7323"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org1ef7323">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-org28f5d47" class="outline-4">
-<h4 id="org28f5d47"><span class="done DONE">DONE</span> Expressions <code>[7/7]</code></h4>
-<div class="outline-text-4" id="text-org28f5d47">
+<div id="outline-container-org1bb7248" class="outline-4">
+<h4 id="org1bb7248"><span class="done DONE">DONE</span> Expressions <code>[7/7]</code></h4>
+<div class="outline-text-4" id="text-org1bb7248">
 </div>
 <ul class="org-ul">
-<li><a id="org552f854"></a><span class="done DONE">DONE</span> Structure of expressions <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org552f854">
+<li><a id="org021f278"></a><span class="done DONE">DONE</span> Structure of expressions <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org021f278">
 </div>
 <ul class="org-ul">
-<li><a id="orgc940225"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgc940225">
+<li><a id="orge7634fb"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orge7634fb">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org8f5bd36"></a><span class="done DONE">DONE</span> Names <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org8f5bd36">
+<li><a id="orgba04115"></a><span class="done DONE">DONE</span> Names <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgba04115">
 </div>
 <ul class="org-ul">
-<li><a id="org91e5eb1"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org91e5eb1">
+<li><a id="org194b9d1"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org194b9d1">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org6615dee"></a><span class="done DONE">DONE</span> Calls <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org6615dee">
+<li><a id="org2877936"></a><span class="done DONE">DONE</span> Calls <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org2877936">
 </div>
 <ul class="org-ul">
-<li><a id="orga9fdbdd"></a><span class="done DONE">DONE</span> Modifying a call<br />
-<div class="outline-text-6" id="text-orga9fdbdd">
+<li><a id="org0fb8183"></a><span class="done DONE">DONE</span> Modifying a call<br />
+<div class="outline-text-6" id="text-org0fb8183">
 </div>
 </li>
-<li><a id="org7d8e3b6"></a><span class="done DONE">DONE</span> Creating a call from its components<br />
-<div class="outline-text-6" id="text-org7d8e3b6">
+<li><a id="orgc9bc086"></a><span class="done DONE">DONE</span> Creating a call from its components<br />
+<div class="outline-text-6" id="text-orgc9bc086">
 </div>
 </li>
-<li><a id="orgee79b76"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgee79b76">
+<li><a id="org621d701"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org621d701">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org27c4741"></a><span class="done DONE">DONE</span> Capturing the current call <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org27c4741">
+<li><a id="orga8a0288"></a><span class="done DONE">DONE</span> Capturing the current call <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orga8a0288">
 </div>
 <ul class="org-ul">
-<li><a id="orge2bad41"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orge2bad41">
+<li><a id="orgefc1490"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgefc1490">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgde1fce5"></a><span class="done DONE">DONE</span> Pairlists <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgde1fce5">
+<li><a id="org23d28d8"></a><span class="done DONE">DONE</span> Pairlists <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org23d28d8">
 </div>
 <ul class="org-ul">
-<li><a id="orgea164a2"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgea164a2">
+<li><a id="org9836b43"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org9836b43">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgbf1e51e"></a><span class="done DONE">DONE</span> Parsing and deparsing <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgbf1e51e">
+<li><a id="org4799b6a"></a><span class="done DONE">DONE</span> Parsing and deparsing <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org4799b6a">
 </div>
 <ul class="org-ul">
-<li><a id="org6855895"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org6855895">
+<li><a id="org9b99809"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org9b99809">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org318416d"></a><span class="done DONE">DONE</span> Walking the AST with recursive functions <code>[4/4]</code><br />
-<div class="outline-text-5" id="text-org318416d">
+<li><a id="org656d85f"></a><span class="done DONE">DONE</span> Walking the AST with recursive functions <code>[4/4]</code><br />
+<div class="outline-text-5" id="text-org656d85f">
 </div>
 <ul class="org-ul">
-<li><a id="orgbf59ed1"></a><span class="done DONE">DONE</span> Finding F and T<br />
-<div class="outline-text-6" id="text-orgbf59ed1">
+<li><a id="org43e83d6"></a><span class="done DONE">DONE</span> Finding F and T<br />
+<div class="outline-text-6" id="text-org43e83d6">
 </div>
 </li>
-<li><a id="org716d62d"></a><span class="done DONE">DONE</span> Finding all variables created by assignment<br />
-<div class="outline-text-6" id="text-org716d62d">
+<li><a id="orgbb2f556"></a><span class="done DONE">DONE</span> Finding all variables created by assignment<br />
+<div class="outline-text-6" id="text-orgbb2f556">
 </div>
 </li>
-<li><a id="org065f848"></a><span class="done DONE">DONE</span> Modifying the call tree<br />
-<div class="outline-text-6" id="text-org065f848">
+<li><a id="org8a71b98"></a><span class="done DONE">DONE</span> Modifying the call tree<br />
+<div class="outline-text-6" id="text-org8a71b98">
 </div>
 </li>
-<li><a id="org490d1ae"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org490d1ae">
+<li><a id="orgd57370e"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgd57370e">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-orge1a753f" class="outline-4">
-<h4 id="orge1a753f"><span class="done DONE">DONE</span> Domain specific languages <code>[2/2]</code></h4>
-<div class="outline-text-4" id="text-orge1a753f">
+<div id="outline-container-orgb096486" class="outline-4">
+<h4 id="orgb096486"><span class="done DONE">DONE</span> Domain specific languages <code>[2/2]</code></h4>
+<div class="outline-text-4" id="text-orgb096486">
 </div>
 <ul class="org-ul">
-<li><a id="org1bdcfb8"></a><span class="done DONE">DONE</span> HTML <code>[6/6]</code><br />
-<div class="outline-text-5" id="text-org1bdcfb8">
+<li><a id="orgbd595c4"></a><span class="done DONE">DONE</span> HTML <code>[6/6]</code><br />
+<div class="outline-text-5" id="text-orgbd595c4">
 </div>
 <ul class="org-ul">
-<li><a id="orgd033f5d"></a><span class="done DONE">DONE</span> Goal<br />
-<div class="outline-text-6" id="text-orgd033f5d">
+<li><a id="orgd1037e9"></a><span class="done DONE">DONE</span> Goal<br />
+<div class="outline-text-6" id="text-orgd1037e9">
 </div>
 </li>
-<li><a id="org5ee42a6"></a><span class="done DONE">DONE</span> Escaping<br />
-<div class="outline-text-6" id="text-org5ee42a6">
+<li><a id="org3c49fd9"></a><span class="done DONE">DONE</span> Escaping<br />
+<div class="outline-text-6" id="text-org3c49fd9">
 </div>
 </li>
-<li><a id="orgce475b5"></a><span class="done DONE">DONE</span> Basic tag functions<br />
-<div class="outline-text-6" id="text-orgce475b5">
+<li><a id="org0a68907"></a><span class="done DONE">DONE</span> Basic tag functions<br />
+<div class="outline-text-6" id="text-org0a68907">
 </div>
 </li>
-<li><a id="org06791d6"></a><span class="done DONE">DONE</span> Tag functions<br />
-<div class="outline-text-6" id="text-org06791d6">
+<li><a id="org1cbb3c8"></a><span class="done DONE">DONE</span> Tag functions<br />
+<div class="outline-text-6" id="text-org1cbb3c8">
 </div>
 </li>
-<li><a id="org396f7d0"></a><span class="done DONE">DONE</span> Processing all tags<br />
-<div class="outline-text-6" id="text-org396f7d0">
+<li><a id="org9219775"></a><span class="done DONE">DONE</span> Processing all tags<br />
+<div class="outline-text-6" id="text-org9219775">
 </div>
 </li>
-<li><a id="org70cf478"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org70cf478">
+<li><a id="orge0d0191"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orge0d0191">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgd483e6e"></a><span class="done DONE">DONE</span> LaTeX <code>[8/8]</code><br />
-<div class="outline-text-5" id="text-orgd483e6e">
+<li><a id="orgadd6d23"></a><span class="done DONE">DONE</span> LaTeX <code>[8/8]</code><br />
+<div class="outline-text-5" id="text-orgadd6d23">
 </div>
 <ul class="org-ul">
-<li><a id="orge3b3fc8"></a><span class="done DONE">DONE</span> LaTeX mathematics<br />
-<div class="outline-text-6" id="text-orge3b3fc8">
+<li><a id="orga82176f"></a><span class="done DONE">DONE</span> LaTeX mathematics<br />
+<div class="outline-text-6" id="text-orga82176f">
 </div>
 </li>
-<li><a id="org33fee14"></a><span class="done DONE">DONE</span> Goal<br />
-<div class="outline-text-6" id="text-org33fee14">
+<li><a id="org13faf6b"></a><span class="done DONE">DONE</span> Goal<br />
+<div class="outline-text-6" id="text-org13faf6b">
 </div>
 </li>
-<li><a id="org08193ba"></a><span class="done DONE">DONE</span> to_math<br />
-<div class="outline-text-6" id="text-org08193ba">
+<li><a id="org552503e"></a><span class="done DONE">DONE</span> to_math<br />
+<div class="outline-text-6" id="text-org552503e">
 </div>
 </li>
-<li><a id="org3db3ca5"></a><span class="done DONE">DONE</span> Known symbols<br />
-<div class="outline-text-6" id="text-org3db3ca5">
+<li><a id="orgf02df35"></a><span class="done DONE">DONE</span> Known symbols<br />
+<div class="outline-text-6" id="text-orgf02df35">
 </div>
 </li>
-<li><a id="org33e0a89"></a><span class="done DONE">DONE</span> Unknown symbols<br />
-<div class="outline-text-6" id="text-org33e0a89">
+<li><a id="orgab19de1"></a><span class="done DONE">DONE</span> Unknown symbols<br />
+<div class="outline-text-6" id="text-orgab19de1">
 </div>
 </li>
-<li><a id="orgf41d047"></a><span class="done DONE">DONE</span> Known functions<br />
-<div class="outline-text-6" id="text-orgf41d047">
+<li><a id="orge71f8fe"></a><span class="done DONE">DONE</span> Known functions<br />
+<div class="outline-text-6" id="text-orge71f8fe">
 </div>
 </li>
-<li><a id="orge77d2cf"></a><span class="done DONE">DONE</span> Unknown functions<br />
-<div class="outline-text-6" id="text-orge77d2cf">
+<li><a id="org36ca655"></a><span class="done DONE">DONE</span> Unknown functions<br />
+<div class="outline-text-6" id="text-org36ca655">
 </div>
 </li>
-<li><a id="org86b639f"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org86b639f">
+<li><a id="org7b28833"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org7b28833">
 </div>
 </li>
 </ul>
@@ -1459,441 +1459,441 @@ package formatR ?
 </ul>
 </div>
 </div>
-<div id="outline-container-org64c7b87" class="outline-3">
-<h3 id="org64c7b87"><span class="done DONE">DONE</span> Performance <code>[10/10]</code></h3>
-<div class="outline-text-3" id="text-org64c7b87">
+<div id="outline-container-org1b64f77" class="outline-3">
+<h3 id="org1b64f77"><span class="done DONE">DONE</span> Performance <code>[10/10]</code></h3>
+<div class="outline-text-3" id="text-org1b64f77">
 </div>
-<div id="outline-container-org068a005" class="outline-4">
-<h4 id="org068a005"><span class="done DONE">DONE</span> Performance <code>[5/5]</code></h4>
-<div class="outline-text-4" id="text-org068a005">
+<div id="outline-container-org075003d" class="outline-4">
+<h4 id="org075003d"><span class="done DONE">DONE</span> Performance <code>[5/5]</code></h4>
+<div class="outline-text-4" id="text-org075003d">
 </div>
 <ul class="org-ul">
-<li><a id="orgc2c0cc5"></a><span class="done DONE">DONE</span> Why is R slow?<br />
-<div class="outline-text-5" id="text-orgc2c0cc5">
+<li><a id="org0851542"></a><span class="done DONE">DONE</span> Why is R slow?<br />
+<div class="outline-text-5" id="text-org0851542">
 </div>
 </li>
-<li><a id="org44dc0a3"></a><span class="done DONE">DONE</span> Microbenchmarking <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org44dc0a3">
+<li><a id="org7512e8a"></a><span class="done DONE">DONE</span> Microbenchmarking <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org7512e8a">
 </div>
 <ul class="org-ul">
-<li><a id="org6fbb888"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org6fbb888">
+<li><a id="orgb1c3213"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgb1c3213">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgfcaaeed"></a><span class="done DONE">DONE</span> Language performance <code>[4/4]</code><br />
-<div class="outline-text-5" id="text-orgfcaaeed">
+<li><a id="org6d268dc"></a><span class="done DONE">DONE</span> Language performance <code>[4/4]</code><br />
+<div class="outline-text-5" id="text-org6d268dc">
 </div>
 <ul class="org-ul">
-<li><a id="org83e7327"></a><span class="done DONE">DONE</span> Extreme dynamism<br />
-<div class="outline-text-6" id="text-org83e7327">
+<li><a id="org027f6a7"></a><span class="done DONE">DONE</span> Extreme dynamism<br />
+<div class="outline-text-6" id="text-org027f6a7">
 </div>
 </li>
-<li><a id="org813a786"></a><span class="done DONE">DONE</span> Name lookup with mutable environments<br />
-<div class="outline-text-6" id="text-org813a786">
+<li><a id="org25cda0c"></a><span class="done DONE">DONE</span> Name lookup with mutable environments<br />
+<div class="outline-text-6" id="text-org25cda0c">
 </div>
 </li>
-<li><a id="org486b19d"></a><span class="done DONE">DONE</span> Lazy evaluation overhead<br />
-<div class="outline-text-6" id="text-org486b19d">
+<li><a id="orge37ad7c"></a><span class="done DONE">DONE</span> Lazy evaluation overhead<br />
+<div class="outline-text-6" id="text-orge37ad7c">
 </div>
 </li>
-<li><a id="org32aaf73"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org32aaf73">
+<li><a id="orgc27639d"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgc27639d">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgf70104a"></a><span class="done DONE">DONE</span> Implementation performance <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-orgf70104a">
+<li><a id="org5be8411"></a><span class="done DONE">DONE</span> Implementation performance <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org5be8411">
 </div>
 <ul class="org-ul">
-<li><a id="orgf92f053"></a><span class="done DONE">DONE</span> Extracting a single value from a data frame<br />
-<div class="outline-text-6" id="text-orgf92f053">
+<li><a id="orgcf874cf"></a><span class="done DONE">DONE</span> Extracting a single value from a data frame<br />
+<div class="outline-text-6" id="text-orgcf874cf">
 </div>
 </li>
-<li><a id="orgb72cfdb"></a><span class="done DONE">DONE</span> iffelse(), pmin() and pmax()<br />
-<div class="outline-text-6" id="text-orgb72cfdb">
+<li><a id="orgd33b42f"></a><span class="done DONE">DONE</span> iffelse(), pmin() and pmax()<br />
+<div class="outline-text-6" id="text-orgd33b42f">
 </div>
 </li>
-<li><a id="orgc8d43b7"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgc8d43b7">
+<li><a id="orgb082aa3"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgb082aa3">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgbce5ede"></a><span class="done DONE">DONE</span> Alternative R implementations<br />
-<div class="outline-text-5" id="text-orgbce5ede">
+<li><a id="orgbbafe98"></a><span class="done DONE">DONE</span> Alternative R implementations<br />
+<div class="outline-text-5" id="text-orgbbafe98">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-orgaabf133" class="outline-4">
-<h4 id="orgaabf133"><span class="done DONE">DONE</span> Optimising code<code>[11/11]</code></h4>
-<div class="outline-text-4" id="text-orgaabf133">
+<div id="outline-container-orga06b936" class="outline-4">
+<h4 id="orga06b936"><span class="done DONE">DONE</span> Optimising code<code>[11/11]</code></h4>
+<div class="outline-text-4" id="text-orga06b936">
 </div>
 <ul class="org-ul">
-<li><a id="org85e69ad"></a><span class="done DONE">DONE</span> Measuring performance <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org85e69ad">
+<li><a id="org90f6bcf"></a><span class="done DONE">DONE</span> Measuring performance <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org90f6bcf">
 </div>
 <ul class="org-ul">
-<li><a id="org1f2d480"></a><span class="done DONE">DONE</span> Limitations<br />
-<div class="outline-text-6" id="text-org1f2d480">
+<li><a id="orge65578f"></a><span class="done DONE">DONE</span> Limitations<br />
+<div class="outline-text-6" id="text-orge65578f">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgf2c3397"></a><span class="done DONE">DONE</span> Improving performance<br />
-<div class="outline-text-5" id="text-orgf2c3397">
+<li><a id="org99c5f49"></a><span class="done DONE">DONE</span> Improving performance<br />
+<div class="outline-text-5" id="text-org99c5f49">
 </div>
 </li>
-<li><a id="orgce64282"></a><span class="done DONE">DONE</span> Code organisation<br />
-<div class="outline-text-5" id="text-orgce64282">
+<li><a id="orgffbcacd"></a><span class="done DONE">DONE</span> Code organisation<br />
+<div class="outline-text-5" id="text-orgffbcacd">
 </div>
 </li>
-<li><a id="org88ebe92"></a><span class="done DONE">DONE</span> Has someone already solved the problem? <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org88ebe92">
+<li><a id="orgb0a794c"></a><span class="done DONE">DONE</span> Has someone already solved the problem? <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgb0a794c">
 </div>
 <ul class="org-ul">
-<li><a id="org653b2ce"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org653b2ce">
+<li><a id="org57e4b75"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org57e4b75">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org5cfffbc"></a><span class="done DONE">DONE</span> Do as little as possible <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org5cfffbc">
+<li><a id="orgc5e1f97"></a><span class="done DONE">DONE</span> Do as little as possible <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgc5e1f97">
 </div>
 <ul class="org-ul">
-<li><a id="orgf976a72"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgf976a72">
+<li><a id="orgd77f8d8"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgd77f8d8">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgc25a3af"></a><span class="done DONE">DONE</span> Vectorise <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgc25a3af">
+<li><a id="org23c4cde"></a><span class="done DONE">DONE</span> Vectorise <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org23c4cde">
 </div>
 <ul class="org-ul">
-<li><a id="org4bd73da"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org4bd73da">
+<li><a id="orgb882bf1"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgb882bf1">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgbc54f09"></a><span class="done DONE">DONE</span> Avoid copies<br />
-<div class="outline-text-5" id="text-orgbc54f09">
+<li><a id="org0756a20"></a><span class="done DONE">DONE</span> Avoid copies<br />
+<div class="outline-text-5" id="text-org0756a20">
 </div>
 </li>
-<li><a id="orgebdd59c"></a><span class="done DONE">DONE</span> Byte code compilation<br />
-<div class="outline-text-5" id="text-orgebdd59c">
+<li><a id="orgc6bb377"></a><span class="done DONE">DONE</span> Byte code compilation<br />
+<div class="outline-text-5" id="text-orgc6bb377">
 </div>
 </li>
-<li><a id="org8a65cc4"></a><span class="done DONE">DONE</span> Case study: t-test<br />
-<div class="outline-text-5" id="text-org8a65cc4">
+<li><a id="orgfb81f66"></a><span class="done DONE">DONE</span> Case study: t-test<br />
+<div class="outline-text-5" id="text-orgfb81f66">
 </div>
 </li>
-<li><a id="orga669e58"></a><span class="done DONE">DONE</span> Parallelise<br />
-<div class="outline-text-5" id="text-orga669e58">
+<li><a id="org3afc93e"></a><span class="done DONE">DONE</span> Parallelise<br />
+<div class="outline-text-5" id="text-org3afc93e">
 </div>
 </li>
-<li><a id="org6da2501"></a><span class="done DONE">DONE</span> Other techniques<br />
-<div class="outline-text-5" id="text-org6da2501">
+<li><a id="orgcbaa466"></a><span class="done DONE">DONE</span> Other techniques<br />
+<div class="outline-text-5" id="text-orgcbaa466">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org77bf13c" class="outline-4">
-<h4 id="org77bf13c"><span class="done DONE">DONE</span> Memory <code>[4/4]</code></h4>
-<div class="outline-text-4" id="text-org77bf13c">
+<div id="outline-container-org0031067" class="outline-4">
+<h4 id="org0031067"><span class="done DONE">DONE</span> Memory <code>[4/4]</code></h4>
+<div class="outline-text-4" id="text-org0031067">
 </div>
 <ul class="org-ul">
-<li><a id="org5718d87"></a><span class="done DONE">DONE</span> Object size <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-org5718d87">
+<li><a id="org7d48bc2"></a><span class="done DONE">DONE</span> Object size <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-org7d48bc2">
 </div>
 <ul class="org-ul">
-<li><a id="orgb02b63e"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-orgb02b63e">
+<li><a id="orgb1f04ec"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-orgb1f04ec">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org083689d"></a><span class="done DONE">DONE</span> Memory usage and garbage collection<br />
-<div class="outline-text-5" id="text-org083689d">
+<li><a id="orga79c5dd"></a><span class="done DONE">DONE</span> Memory usage and garbage collection<br />
+<div class="outline-text-5" id="text-orga79c5dd">
 </div>
 </li>
-<li><a id="orgc10f97c"></a><span class="done DONE">DONE</span> Memory profiling and lineprof <code>[1/1]</code><br />
-<div class="outline-text-5" id="text-orgc10f97c">
+<li><a id="orgfa07043"></a><span class="done DONE">DONE</span> Memory profiling and lineprof <code>[1/1]</code><br />
+<div class="outline-text-5" id="text-orgfa07043">
 </div>
 <ul class="org-ul">
-<li><a id="org6b49f56"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org6b49f56">
+<li><a id="org4bb71e6"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org4bb71e6">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgf4c714e"></a><span class="done DONE">DONE</span> Modification in place<code>[2/2]</code><br />
-<div class="outline-text-5" id="text-orgf4c714e">
+<li><a id="org03f21cd"></a><span class="done DONE">DONE</span> Modification in place<code>[2/2]</code><br />
+<div class="outline-text-5" id="text-org03f21cd">
 </div>
 <ul class="org-ul">
-<li><a id="org8d9864d"></a><span class="done DONE">DONE</span> Loops<br />
-<div class="outline-text-6" id="text-org8d9864d">
+<li><a id="orgce8b112"></a><span class="done DONE">DONE</span> Loops<br />
+<div class="outline-text-6" id="text-orgce8b112">
 </div>
 </li>
-<li><a id="org08e0d64"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org08e0d64">
+<li><a id="org90f9654"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org90f9654">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-org313338c" class="outline-4">
-<h4 id="org313338c"><span class="done DONE">DONE</span> High performance functions with Rcpp <code>[3/3]</code></h4>
-<div class="outline-text-4" id="text-org313338c">
+<div id="outline-container-orga283257" class="outline-4">
+<h4 id="orga283257"><span class="done DONE">DONE</span> High performance functions with Rcpp <code>[3/3]</code></h4>
+<div class="outline-text-4" id="text-orga283257">
 </div>
 <ul class="org-ul">
-<li><a id="org3e550b9"></a><span class="done DONE">DONE</span> Getting started with C++<br />
-<div class="outline-text-5" id="text-org3e550b9">
+<li><a id="org656d592"></a><span class="done DONE">DONE</span> Getting started with C++<br />
+<div class="outline-text-5" id="text-org656d592">
 </div>
 <ul class="org-ul">
-<li><a id="orgde9c01d"></a><span class="done DONE">DONE</span> No inputs, scalar output<br />
-<div class="outline-text-6" id="text-orgde9c01d">
+<li><a id="orge3cb495"></a><span class="done DONE">DONE</span> No inputs, scalar output<br />
+<div class="outline-text-6" id="text-orge3cb495">
 </div>
 </li>
-<li><a id="orgf8d7c3c"></a><span class="done DONE">DONE</span> Scalar input, scalar output<br />
-<div class="outline-text-6" id="text-orgf8d7c3c">
+<li><a id="org6742a3a"></a><span class="done DONE">DONE</span> Scalar input, scalar output<br />
+<div class="outline-text-6" id="text-org6742a3a">
 </div>
 </li>
-<li><a id="orgc4b3d3a"></a><span class="done DONE">DONE</span> Vector input, scalar output<br />
-<div class="outline-text-6" id="text-orgc4b3d3a">
+<li><a id="org888760a"></a><span class="done DONE">DONE</span> Vector input, scalar output<br />
+<div class="outline-text-6" id="text-org888760a">
 </div>
 </li>
-<li><a id="orgf7577f7"></a><span class="done DONE">DONE</span> Vector input, vector output<br />
-<div class="outline-text-6" id="text-orgf7577f7">
+<li><a id="org1e674c7"></a><span class="done DONE">DONE</span> Vector input, vector output<br />
+<div class="outline-text-6" id="text-org1e674c7">
 </div>
 </li>
-<li><a id="orgfb720a6"></a><span class="done DONE">DONE</span> Matrix input, vector output<br />
-<div class="outline-text-6" id="text-orgfb720a6">
+<li><a id="org3385565"></a><span class="done DONE">DONE</span> Matrix input, vector output<br />
+<div class="outline-text-6" id="text-org3385565">
 </div>
 </li>
-<li><a id="org64af4ce"></a><span class="done DONE">DONE</span> Using sourceCpp<br />
-<div class="outline-text-6" id="text-org64af4ce">
+<li><a id="org6ab8307"></a><span class="done DONE">DONE</span> Using sourceCpp<br />
+<div class="outline-text-6" id="text-org6ab8307">
 </div>
 </li>
-<li><a id="org09f0e0f"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org09f0e0f">
+<li><a id="org6170386"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org6170386">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org0dfdaee"></a><span class="done DONE">DONE</span> Attributes and other classes <code>[3/3]</code><br />
-<div class="outline-text-5" id="text-org0dfdaee">
+<li><a id="org00f9352"></a><span class="done DONE">DONE</span> Attributes and other classes <code>[3/3]</code><br />
+<div class="outline-text-5" id="text-org00f9352">
 </div>
 <ul class="org-ul">
-<li><a id="orgc709b68"></a><span class="done DONE">DONE</span> Lists and data frames<br />
-<div class="outline-text-6" id="text-orgc709b68">
+<li><a id="org21143e2"></a><span class="done DONE">DONE</span> Lists and data frames<br />
+<div class="outline-text-6" id="text-org21143e2">
 </div>
 </li>
-<li><a id="orge61ddb6"></a><span class="done DONE">DONE</span> Functions<br />
-<div class="outline-text-6" id="text-orge61ddb6">
+<li><a id="org3574110"></a><span class="done DONE">DONE</span> Functions<br />
+<div class="outline-text-6" id="text-org3574110">
 </div>
 </li>
-<li><a id="org2fc4eb7"></a><span class="done DONE">DONE</span> Other types<br />
-<div class="outline-text-6" id="text-org2fc4eb7">
+<li><a id="orge370903"></a><span class="done DONE">DONE</span> Other types<br />
+<div class="outline-text-6" id="text-orge370903">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org7555053"></a><span class="done DONE">DONE</span> Missing values <code>[5/5]</code><br />
-<div class="outline-text-5" id="text-org7555053">
+<li><a id="org10f7c8e"></a><span class="done DONE">DONE</span> Missing values <code>[5/5]</code><br />
+<div class="outline-text-5" id="text-org10f7c8e">
 </div>
 <ul class="org-ul">
-<li><a id="org03e5058"></a><span class="done DONE">DONE</span> Scalars <code>[2/2]</code><br />
-<div class="outline-text-6" id="text-org03e5058">
+<li><a id="org6925630"></a><span class="done DONE">DONE</span> Scalars <code>[2/2]</code><br />
+<div class="outline-text-6" id="text-org6925630">
 </div>
 <ul class="org-ul">
-<li><a id="orga83b5d1"></a><span class="done DONE">DONE</span> Integers<br />
-<div class="outline-text-7" id="text-orga83b5d1">
+<li><a id="org09cdb35"></a><span class="done DONE">DONE</span> Integers<br />
+<div class="outline-text-7" id="text-org09cdb35">
 </div>
 </li>
-<li><a id="org9b6b94e"></a><span class="done DONE">DONE</span> Doubles<br />
-<div class="outline-text-7" id="text-org9b6b94e">
+<li><a id="orgd9d82b2"></a><span class="done DONE">DONE</span> Doubles<br />
+<div class="outline-text-7" id="text-orgd9d82b2">
 </div>
 </li>
 </ul>
 </li>
-<li><a id="org8d17848"></a><span class="done DONE">DONE</span> Strings<br />
-<div class="outline-text-6" id="text-org8d17848">
+<li><a id="org13278bc"></a><span class="done DONE">DONE</span> Strings<br />
+<div class="outline-text-6" id="text-org13278bc">
 </div>
 </li>
-<li><a id="org0c341ad"></a><span class="done DONE">DONE</span> Boolean<br />
-<div class="outline-text-6" id="text-org0c341ad">
+<li><a id="org817a366"></a><span class="done DONE">DONE</span> Boolean<br />
+<div class="outline-text-6" id="text-org817a366">
 </div>
 </li>
-<li><a id="org8420d0e"></a><span class="done DONE">DONE</span> Vectors<br />
-<div class="outline-text-6" id="text-org8420d0e">
+<li><a id="orge5cc826"></a><span class="done DONE">DONE</span> Vectors<br />
+<div class="outline-text-6" id="text-orge5cc826">
 </div>
 </li>
-<li><a id="org73b5a59"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-6" id="text-org73b5a59">
+<li><a id="org4ffcdf1"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-6" id="text-org4ffcdf1">
 </div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-org6a7bec5" class="outline-4">
-<h4 id="org6a7bec5"><span class="done DONE">DONE</span> Rcpp sugar <code>[4/4]</code></h4>
-<div class="outline-text-4" id="text-org6a7bec5">
+<div id="outline-container-org5bdf3da" class="outline-4">
+<h4 id="org5bdf3da"><span class="done DONE">DONE</span> Rcpp sugar <code>[4/4]</code></h4>
+<div class="outline-text-4" id="text-org5bdf3da">
 </div>
 <ul class="org-ul">
-<li><a id="org6d33b9b"></a><span class="done DONE">DONE</span> Arithmetic and logical operators<br />
-<div class="outline-text-5" id="text-org6d33b9b">
+<li><a id="org18c81cf"></a><span class="done DONE">DONE</span> Arithmetic and logical operators<br />
+<div class="outline-text-5" id="text-org18c81cf">
 </div>
 </li>
-<li><a id="orgda80a04"></a><span class="done DONE">DONE</span> Logical summary functions<br />
-<div class="outline-text-5" id="text-orgda80a04">
+<li><a id="org69beed8"></a><span class="done DONE">DONE</span> Logical summary functions<br />
+<div class="outline-text-5" id="text-org69beed8">
 </div>
 </li>
-<li><a id="org5734853"></a><span class="done DONE">DONE</span> Vector views<br />
-<div class="outline-text-5" id="text-org5734853">
+<li><a id="orgf25fe80"></a><span class="done DONE">DONE</span> Vector views<br />
+<div class="outline-text-5" id="text-orgf25fe80">
 </div>
 </li>
-<li><a id="orgc082718"></a><span class="done DONE">DONE</span> Other useful functions<br />
-<div class="outline-text-5" id="text-orgc082718">
+<li><a id="org7de449c"></a><span class="done DONE">DONE</span> Other useful functions<br />
+<div class="outline-text-5" id="text-org7de449c">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-orge0d259d" class="outline-4">
-<h4 id="orge0d259d"><span class="done DONE">DONE</span> The STL <code>[7/7]</code></h4>
-<div class="outline-text-4" id="text-orge0d259d">
+<div id="outline-container-org30c9014" class="outline-4">
+<h4 id="org30c9014"><span class="done DONE">DONE</span> The STL <code>[7/7]</code></h4>
+<div class="outline-text-4" id="text-org30c9014">
 </div>
 <ul class="org-ul">
-<li><a id="orgbe0b1d4"></a><span class="done DONE">DONE</span> Using iterators<br />
-<div class="outline-text-5" id="text-orgbe0b1d4">
+<li><a id="orgf8aaceb"></a><span class="done DONE">DONE</span> Using iterators<br />
+<div class="outline-text-5" id="text-orgf8aaceb">
 </div>
 </li>
-<li><a id="orgf14f93a"></a><span class="done DONE">DONE</span> Algorithms<br />
-<div class="outline-text-5" id="text-orgf14f93a">
+<li><a id="org0cd6e40"></a><span class="done DONE">DONE</span> Algorithms<br />
+<div class="outline-text-5" id="text-org0cd6e40">
 </div>
 </li>
-<li><a id="org66a4b1a"></a><span class="done DONE">DONE</span> Data structures<br />
-<div class="outline-text-5" id="text-org66a4b1a">
+<li><a id="org2ca512c"></a><span class="done DONE">DONE</span> Data structures<br />
+<div class="outline-text-5" id="text-org2ca512c">
 </div>
 </li>
-<li><a id="org0894fc9"></a><span class="done DONE">DONE</span> Vectors<br />
-<div class="outline-text-5" id="text-org0894fc9">
+<li><a id="org7b94549"></a><span class="done DONE">DONE</span> Vectors<br />
+<div class="outline-text-5" id="text-org7b94549">
 </div>
 </li>
-<li><a id="orgafefe01"></a><span class="done DONE">DONE</span> Sets<br />
-<div class="outline-text-5" id="text-orgafefe01">
+<li><a id="orga404dd3"></a><span class="done DONE">DONE</span> Sets<br />
+<div class="outline-text-5" id="text-orga404dd3">
 </div>
 </li>
-<li><a id="orgc967c00"></a><span class="done DONE">DONE</span> Map<br />
-<div class="outline-text-5" id="text-orgc967c00">
+<li><a id="org82a4ad6"></a><span class="done DONE">DONE</span> Map<br />
+<div class="outline-text-5" id="text-org82a4ad6">
 </div>
 </li>
-<li><a id="orgcb4f645"></a><span class="done DONE">DONE</span> Exercises<br />
-<div class="outline-text-5" id="text-orgcb4f645">
+<li><a id="orgaa6fff1"></a><span class="done DONE">DONE</span> Exercises<br />
+<div class="outline-text-5" id="text-orgaa6fff1">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org4ec7fcc" class="outline-4">
-<h4 id="org4ec7fcc"><span class="done DONE">DONE</span> Case studies <code>[2/2]</code></h4>
-<div class="outline-text-4" id="text-org4ec7fcc">
+<div id="outline-container-orge333111" class="outline-4">
+<h4 id="orge333111"><span class="done DONE">DONE</span> Case studies <code>[2/2]</code></h4>
+<div class="outline-text-4" id="text-orge333111">
 </div>
 <ul class="org-ul">
-<li><a id="org151ea01"></a><span class="done DONE">DONE</span> Gibbs sampler<br />
-<div class="outline-text-5" id="text-org151ea01">
+<li><a id="org08da12b"></a><span class="done DONE">DONE</span> Gibbs sampler<br />
+<div class="outline-text-5" id="text-org08da12b">
 </div>
 </li>
-<li><a id="org485e56f"></a><span class="done DONE">DONE</span> R vectorisation vs. C++ vectorisation<br />
-<div class="outline-text-5" id="text-org485e56f">
+<li><a id="orge79e944"></a><span class="done DONE">DONE</span> R vectorisation vs. C++ vectorisation<br />
+<div class="outline-text-5" id="text-orge79e944">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org5206659" class="outline-4">
-<h4 id="org5206659"><span class="done DONE">DONE</span> Using Rcpp in a package</h4>
-<div class="outline-text-4" id="text-org5206659">
+<div id="outline-container-org205bf8c" class="outline-4">
+<h4 id="org205bf8c"><span class="done DONE">DONE</span> Using Rcpp in a package</h4>
+<div class="outline-text-4" id="text-org205bf8c">
 </div>
 </div>
-<div id="outline-container-org67c1bcb" class="outline-4">
-<h4 id="org67c1bcb"><span class="done DONE">DONE</span> Learning more</h4>
-<div class="outline-text-4" id="text-org67c1bcb">
+<div id="outline-container-orgbf984d6" class="outline-4">
+<h4 id="orgbf984d6"><span class="done DONE">DONE</span> Learning more</h4>
+<div class="outline-text-4" id="text-orgbf984d6">
 </div>
 </div>
-<div id="outline-container-orgac84e46" class="outline-4">
-<h4 id="orgac84e46"><span class="done DONE">DONE</span> Acknowledgements</h4>
-<div class="outline-text-4" id="text-orgac84e46">
+<div id="outline-container-orgef7e97b" class="outline-4">
+<h4 id="orgef7e97b"><span class="done DONE">DONE</span> Acknowledgements</h4>
+<div class="outline-text-4" id="text-orgef7e97b">
 </div>
 </div>
 </div>
-<div id="outline-container-org84e307b" class="outline-3">
-<h3 id="org84e307b"><span class="done DONE">DONE</span> R's C interface <code>[6/6]</code></h3>
-<div class="outline-text-3" id="text-org84e307b">
+<div id="outline-container-org5ecc0d3" class="outline-3">
+<h3 id="org5ecc0d3"><span class="done DONE">DONE</span> R's C interface <code>[6/6]</code></h3>
+<div class="outline-text-3" id="text-org5ecc0d3">
 </div>
-<div id="outline-container-orgc86114b" class="outline-4">
-<h4 id="orgc86114b"><span class="done DONE">DONE</span> Calling C functions from R</h4>
-<div class="outline-text-4" id="text-orgc86114b">
+<div id="outline-container-orge573b5b" class="outline-4">
+<h4 id="orge573b5b"><span class="done DONE">DONE</span> Calling C functions from R</h4>
+<div class="outline-text-4" id="text-orge573b5b">
 </div>
 </div>
-<div id="outline-container-orgd48dbaf" class="outline-4">
-<h4 id="orgd48dbaf"><span class="done DONE">DONE</span> C data structures</h4>
-<div class="outline-text-4" id="text-orgd48dbaf">
+<div id="outline-container-orgc1c33af" class="outline-4">
+<h4 id="orgc1c33af"><span class="done DONE">DONE</span> C data structures</h4>
+<div class="outline-text-4" id="text-orgc1c33af">
 </div>
 </div>
-<div id="outline-container-orgb9461f6" class="outline-4">
-<h4 id="orgb9461f6"><span class="done DONE">DONE</span> Creating and modifying vectors <code>[7/7]</code></h4>
-<div class="outline-text-4" id="text-orgb9461f6">
+<div id="outline-container-orgf575acd" class="outline-4">
+<h4 id="orgf575acd"><span class="done DONE">DONE</span> Creating and modifying vectors <code>[7/7]</code></h4>
+<div class="outline-text-4" id="text-orgf575acd">
 </div>
 <ul class="org-ul">
-<li><a id="orgd1644b2"></a><span class="done DONE">DONE</span> Creating vectors and garbage collection<br />
-<div class="outline-text-5" id="text-orgd1644b2">
+<li><a id="org4fd64ab"></a><span class="done DONE">DONE</span> Creating vectors and garbage collection<br />
+<div class="outline-text-5" id="text-org4fd64ab">
 </div>
 </li>
-<li><a id="orgf5d7a63"></a><span class="done DONE">DONE</span> Missing and non-finite values<br />
-<div class="outline-text-5" id="text-orgf5d7a63">
+<li><a id="orgb28ad34"></a><span class="done DONE">DONE</span> Missing and non-finite values<br />
+<div class="outline-text-5" id="text-orgb28ad34">
 </div>
 </li>
-<li><a id="org1c20709"></a><span class="done DONE">DONE</span> Accessing vector data<br />
-<div class="outline-text-5" id="text-org1c20709">
+<li><a id="org5ca5b42"></a><span class="done DONE">DONE</span> Accessing vector data<br />
+<div class="outline-text-5" id="text-org5ca5b42">
 </div>
 </li>
-<li><a id="org4fff639"></a><span class="done DONE">DONE</span> Character vectors and lists<br />
-<div class="outline-text-5" id="text-org4fff639">
+<li><a id="org369a45a"></a><span class="done DONE">DONE</span> Character vectors and lists<br />
+<div class="outline-text-5" id="text-org369a45a">
 </div>
 </li>
-<li><a id="org88f027a"></a><span class="done DONE">DONE</span> Modifying inputs<br />
-<div class="outline-text-5" id="text-org88f027a">
+<li><a id="org89aaa3a"></a><span class="done DONE">DONE</span> Modifying inputs<br />
+<div class="outline-text-5" id="text-org89aaa3a">
 </div>
 </li>
-<li><a id="org82d88be"></a><span class="done DONE">DONE</span> Coercing scalars<br />
-<div class="outline-text-5" id="text-org82d88be">
+<li><a id="orgcb17840"></a><span class="done DONE">DONE</span> Coercing scalars<br />
+<div class="outline-text-5" id="text-orgcb17840">
 </div>
 </li>
-<li><a id="orge801bd9"></a><span class="done DONE">DONE</span> Long vectors<br />
-<div class="outline-text-5" id="text-orge801bd9">
+<li><a id="orgf59727c"></a><span class="done DONE">DONE</span> Long vectors<br />
+<div class="outline-text-5" id="text-orgf59727c">
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org9d4a8bb" class="outline-4">
-<h4 id="org9d4a8bb"><span class="done DONE">DONE</span> Pairlists</h4>
-<div class="outline-text-4" id="text-org9d4a8bb">
+<div id="outline-container-org012098b" class="outline-4">
+<h4 id="org012098b"><span class="done DONE">DONE</span> Pairlists</h4>
+<div class="outline-text-4" id="text-org012098b">
 </div>
 </div>
-<div id="outline-container-org9644933" class="outline-4">
-<h4 id="org9644933"><span class="done DONE">DONE</span> Input validation</h4>
-<div class="outline-text-4" id="text-org9644933">
+<div id="outline-container-org3413fc5" class="outline-4">
+<h4 id="org3413fc5"><span class="done DONE">DONE</span> Input validation</h4>
+<div class="outline-text-4" id="text-org3413fc5">
 </div>
 </div>
-<div id="outline-container-org159d89b" class="outline-4">
-<h4 id="org159d89b"><span class="done DONE">DONE</span> Finding the C source code for a function</h4>
-<div class="outline-text-4" id="text-org159d89b">
+<div id="outline-container-org0df43e2" class="outline-4">
+<h4 id="org0df43e2"><span class="done DONE">DONE</span> Finding the C source code for a function</h4>
+<div class="outline-text-4" id="text-org0df43e2">
 </div>
 </div>
 </div>

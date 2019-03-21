@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Dislike python - Prumnopytis</title>
+    <title>Updating a fresh Gentoo image on linode - Prumnopytis</title>
     <meta charset="utf-8" />
     <meta name="author" content="jake" />
-    <meta name="description" content="Expressing my dislike of Python" />
-    <meta name="keywords" content="python" />
+    <meta name="description" content="Literate programming updating a fresh gentoo linode image" />
+    <meta name="keywords" content="gentoo, virtual-server, linode, emacs, org-mode, org-babel, shell, ssh" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -32,116 +32,98 @@
 
 <div>
 <div class="post">
-<h1>Dislike python</h1>
-<div id="outline-container-org1b1124f" class="outline-2">
-<h2 id="org1b1124f">Why am I a Python programmer?</h2>
-<div class="outline-text-2" id="text-org1b1124f">
-<p>
-I spent a summer reviewing and coding foreground Matlab implementations of image segmentation algorithms.
-</p>
+<h1>Updating a fresh Gentoo image on linode</h1>
 
+<div id="outline-container-org3ac60f2" class="outline-2">
+<h2 id="org3ac60f2">Description</h2>
+<div class="outline-text-2" id="text-org3ac60f2">
 <p>
-Python was not a proprietary language and at the time I observed the scipy stack had happened to  move a little faster on some algorithms I cared about.
-</p>
-
-<p>
-Coming from Matlab-physics, similar Python module APIs were similar.
+All the interactions, via shell ssh, with a linode I am setting up
 </p>
 </div>
 </div>
-
-<div id="outline-container-org93ad625" class="outline-2">
-<h2 id="org93ad625">Why do I dislike Python?</h2>
-<div class="outline-text-2" id="text-org93ad625">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Bash seems better at being sh than Python is</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">R seems better for conveniently exposing C and Fortran than Python is</td>
-</tr>
-</tbody>
-</table>
+<div id="outline-container-org4e8816f" class="outline-2">
+<h2 id="org4e8816f">Shell</h2>
+<div class="outline-text-2" id="text-org4e8816f">
+</div>
+<div id="outline-container-org4378a2e" class="outline-3">
+<h3 id="org4378a2e">First things first</h3>
+<div class="outline-text-3" id="text-org4378a2e">
+<ul class="org-ul">
+<li>Add my public key, via Linode's web shell</li>
+</ul>
 </div>
 </div>
-
-<div id="outline-container-org9b51aa5" class="outline-2">
-<h2 id="org9b51aa5">Python being useful</h2>
-<div class="outline-text-2" id="text-org9b51aa5">
-<pre class="example">
-python3 -m venv venv
-source venv/bin/activate
-pip install pygame
+<div id="outline-container-org18a63fd" class="outline-3">
+<h3 id="org18a63fd">Example shell working</h3>
+<div class="outline-text-3" id="text-org18a63fd">
+<div class="org-src-container">
+<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt; EOF
+  pwd
+EOF
 </pre>
-<p>
-and
-</p>
-<pre class="example">
-python3 -m venv venv
-source venv/bin/activate
-pip install ansible
-ansible-galaxy install geerlingguy.nfs
-</pre>
-<p>
-for example.
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">Built in virtual environment module</td>
-</tr>
-
-<tr>
-<td class="org-left">(Using something in shell is still shell)</td>
-</tr>
-
-<tr>
-<td class="org-left">Built in package manager has a lot</td>
-</tr>
-</tbody>
-</table>
+</div>
 </div>
 </div>
 
-<div id="outline-container-orgb677f65" class="outline-2">
-<h2 id="orgb677f65">Python as a language</h2>
-<div class="outline-text-2" id="text-orgb677f65">
-<pre class="example">
-def getfizzbuzz(n):
-    listToPrint=[]
-
-    if n % 3 is 0:
-        listToPrint+=["Fizz"]
-
-    if n % 5 == 0:
-        listToPrint.append(
-            "Buzz",
-	)
-
-    if listToPrint: return ''.join(listToPrint[::]);
-    else: 
-        return n
-
-for fizzresponse in [ getfizzbuzz(n=n-1) for n in range(2, 102, 1) ]: print(fizzresponse);
+<div id="outline-container-orga2044b1" class="outline-3">
+<h3 id="orga2044b1">Syncing portage</h3>
+<div class="outline-text-3" id="text-orga2044b1">
+<div class="org-src-container">
+<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+  emerge --sync
+EOF
 </pre>
+</div>
+</div>
+</div>
 
-<p>
-That got a little silly.
-</p>
+<div id="outline-container-org912ebbd" class="outline-3">
+<h3 id="org912ebbd">Updating portage</h3>
+<div class="outline-text-3" id="text-org912ebbd">
+<div class="org-src-container">
+<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+  emerge --oneshot portage
+EOF
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga1f54b0" class="outline-3">
+<h3 id="orga1f54b0">Upgrading system</h3>
+<div class="outline-text-3" id="text-orga1f54b0">
+<div class="org-src-container">
+<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+  emerge -vuDN --with-bdeps y --keep-going world
+EOF
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb7a76b0" class="outline-3">
+<h3 id="orgb7a76b0">Update configuration</h3>
+<div class="outline-text-3" id="text-orgb7a76b0">
+<div class="org-src-container">
+<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+  echo '-5' | etc-update
+EOF
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge5e1acb" class="outline-3">
+<h3 id="orge5e1acb">Clean dependencies</h3>
+<div class="outline-text-3" id="text-orge5e1acb">
+<div class="org-src-container">
+<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+  emerge -v --depclean
+EOF
+</pre>
+</div>
+</div>
 </div>
 </div>
 
@@ -149,9 +131,9 @@ That got a little silly.
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2019-01-27</span>
-        <span title="last modification date" class="post-info">2019-01-27</span>
-        <span title="tags" class="post-info"><a href="/tags/polemic/">polemic</a></span>
+        <span title="post date" class="post-info">2019-03-21</span>
+        <span title="last modification date" class="post-info">2019-03-21</span>
+        <span title="tags" class="post-info"><a href="/tags/how-to/">how-to</a></span>
         <span title="author" class="post-info">jake</span>
       </div>
       <section>
@@ -159,8 +141,8 @@ That got a little silly.
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2019/01/27/dislike-python";
-          var disqus_url = "https://prumnopytis.github.io/blog/2019/01/27/dislike-python";
+          var disqus_identifier = "/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode";
           var disqus_shortname = 'prumnopytis-github-io';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {

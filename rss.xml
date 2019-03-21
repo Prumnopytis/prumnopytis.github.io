@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Sat, 16 Mar 2019 19:22:32 NZDT</pubDate>
-    <lastBuildDate>Sat, 16 Mar 2019 19:22:32 NZDT</lastBuildDate>
+    <pubDate>Thu, 21 Mar 2019 14:37:22 NZDT</pubDate>
+    <lastBuildDate>Thu, 21 Mar 2019 14:37:22 NZDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Updating a fresh Gentoo image on linode</title>
+      <link>https://prumnopytis.github.io/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode</link>
+      <description><![CDATA[Literate programming updating a fresh gentoo linode image]]></description>
+      <pubDate>2019-03-21</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode</guid>
+    </item>
     <item>
       <title>nomadBSD and godot game engine</title>
       <link>https://prumnopytis.github.io/blog/2019/03/16/nomadbsd-and-godot-game-engine</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Rumination on language choice]]></description>
       <pubDate>2019-01-27</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/27/what-do-i-want-from-a-programming-language</guid>
-    </item>
-    <item>
-      <title>Silvereye</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/12/silvereye</link>
-      <description><![CDATA[A photo of a silvereye]]></description>
-      <pubDate>2019-01-12</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/12/silvereye</guid>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,76 @@
+#+TITLE:       Adding a gentoo overlay with layman
+#+AUTHOR:      jake
+#+EMAIL:       jake@localhost.localdomain
+#+DATE:        2019-05-09 Thu
+#+URI:         /blog/%y/%m/%d/adding-a-gentoo-overlay-with-layman
+#+KEYWORDS:    gentoo, package-management, emerge, layman, acl2
+#+TAGS:        how-to
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: In which I add an overlay using layman
+* Heart-felt desire
+  I want to install acl2 on gentoo using portage package manager on a linode virtual server.
+* Starting point
+  Linode's gentoo image.
+* Install layman
+  #+begin_src bash
+    emerge --ask app-portage/layman
+  #+end_src
+* Add repository
+  #+begin_src bash
+    layman -o http://gpo.zugaina.org/lst/gpo-repositories.xml -L
+  #+end_src
+* Have a quick look
+  #+begin_src bash
+    layman -L | grep science
+  #+end_src
+* Add overlay
+  #+begin_src bash
+    layman -a science
+  #+end_src
+* Search a package
+  #+begin_src bash
+    emerge -s acl2
+  #+end_src
+
+  #+begin_example
+    [ Results for search key : acl2 ]
+    Searching...
+
+    ,*  sci-mathematics/acl2 [ Masked ]
+	  Latest version available: 7.1
+	  Latest version installed: [ Not Installed ]
+	  Size of files: 61,861 KiB
+	  Homepage:      http://www.cs.utexas.edu/users/moore/acl2/
+	  Description:   Industrial strength theorem prover
+	  License:       BSD
+  #+end_example
+* Install acl2
+  #+begin_src bash
+    emerge --ask sci-mathematics/acl2
+  #+end_src
+
+  #+begin_example
+    These are the packages that would be merged, in order:
+
+    Calculating dependencies... done!
+    [ebuild  N     ] dev-lisp/asdf-3.1.5  USE="-doc" 
+    [ebuild  N     ] dev-lisp/uiop-3.1.5 
+    [ebuild  N     ] dev-lisp/sbcl-1.4.9  USE="threads unicode zlib -debug -doc -pa 
+    [ebuild  N    ~] sci-mathematics/acl2-7.1  USE="-books" 
+
+    The following keyword changes are necessary to proceed:
+     (see "package.accept_keywords" in the portage(5) man page for more details)
+    # required by sci-mathematics/acl2 (argument)
+    =sci-mathematics/acl2-7.1 ~amd64
+
+    Would you like to add these changes to your config files? [Yes/No] 
+  #+end_example
+  #+begin_src bash
+    echo '-5' | etc-update
+  #+end_src
+  #+begin_src bash
+    emerge --ask sci-mathematics/acl2
+  #+end_src
+  #+begin_example
+  #+end_example

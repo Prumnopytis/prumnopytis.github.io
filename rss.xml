@@ -4,10 +4,17 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Thu, 21 Mar 2019 15:56:11 NZDT</pubDate>
-    <lastBuildDate>Thu, 21 Mar 2019 15:56:11 NZDT</lastBuildDate>
+    <pubDate>Tue, 21 May 2019 19:31:20 NZST</pubDate>
+    <lastBuildDate>Tue, 21 May 2019 19:31:20 NZST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Emerge emacs live on linode and browse web privately</title>
+      <link>https://prumnopytis.github.io/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately</link>
+      <description><![CDATA[In which I set up emacs 27 on a fresh linode gentoo image, and also tor]]></description>
+      <pubDate>2019-05-21</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately</guid>
+    </item>
     <item>
       <title>Updating a fresh Gentoo image on linode</title>
       <link>https://prumnopytis.github.io/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Expressing my dislike of Python]]></description>
       <pubDate>2019-01-27</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/27/dislike-python</guid>
-    </item>
-    <item>
-      <title>What do I want from a programming language?</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/27/what-do-i-want-from-a-programming-language</link>
-      <description><![CDATA[Rumination on language choice]]></description>
-      <pubDate>2019-01-27</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/27/what-do-i-want-from-a-programming-language</guid>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Updating a fresh Gentoo image on linode - Prumnopytis</title>
+    <title>Emerge emacs live on linode and browse web privately - Prumnopytis</title>
     <meta charset="utf-8" />
     <meta name="author" content="jake" />
-    <meta name="description" content="Literate programming updating a fresh gentoo linode image" />
-    <meta name="keywords" content="gentoo, virtual-server, linode, emacs, org-mode, org-babel, shell, ssh" />
+    <meta name="description" content="In which I set up emacs 27 on a fresh linode gentoo image, and also tor" />
+    <meta name="keywords" content="emacs, org-mode, gentoo, tor, linux, sysadmin, ssh, linode, setup, portage, emerge" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -32,112 +32,64 @@
 
 <div>
 <div class="post">
-<h1>Updating a fresh Gentoo image on linode</h1>
+<h1>Emerge emacs live on linode and browse web privately</h1>
 
-<div id="outline-container-orga0708a6" class="outline-2">
-<h2 id="orga0708a6">Description</h2>
-<div class="outline-text-2" id="text-orga0708a6">
+<div id="outline-container-orgc9922c7" class="outline-2">
+<h2 id="orgc9922c7">Install screen</h2>
+<div class="outline-text-2" id="text-orgc9922c7">
 <p>
-All the interactions, via shell ssh, with a linode I am setting up.
+Gnu screen is little and lets us run shell commands headlessly
 </p>
-</div>
-</div>
-<div id="outline-container-org509e133" class="outline-2">
-<h2 id="org509e133">Shell</h2>
-<div class="outline-text-2" id="text-org509e133">
-</div>
-<div id="outline-container-org8dcf3ca" class="outline-3">
-<h3 id="org8dcf3ca">Table of Contents</h3>
-<div class="outline-text-3" id="text-org8dcf3ca">
-<ol class="org-ol">
-<li><a href="#org8d774f1">First things first</a></li>
-<li><a href="#orgdddf988">Example shell working</a></li>
-<li><a href="#orgce6d71c">Syncing portage</a></li>
-<li><a href="#orgab85cff">Updating portage</a></li>
-<li><a href="#org7a42e5f">Upgrading system</a></li>
-<li><a href="#orgf401e88">Update configuration</a></li>
-<li><a href="#orgaea51e1">Clean dependencies</a></li>
-</ol>
-</div>
-</div>
-<div id="outline-container-org8d774f1" class="outline-3">
-<h3 id="org8d774f1">First things first</h3>
-<div class="outline-text-3" id="text-org8d774f1">
-<ul class="org-ul">
-<li>Add a Linode with their Gentoo base image</li>
-<li>Add my public key, via Linode's web shell</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgdddf988" class="outline-3">
-<h3 id="orgdddf988">Example shell working</h3>
-<div class="outline-text-3" id="text-orgdddf988">
 <div class="org-src-container">
-<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt; EOF
-  pwd
+<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+ emerge app-misc/screen 
 EOF
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgce6d71c" class="outline-3">
-<h3 id="orgce6d71c">Syncing portage</h3>
-<div class="outline-text-3" id="text-orgce6d71c">
+<div id="outline-container-org2f3614b" class="outline-2">
+<h2 id="org2f3614b">Install emacs</h2>
+<div class="outline-text-2" id="text-org2f3614b">
+<p>
+You should also use emacs
+</p>
 <div class="org-src-container">
-<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-  emerge --sync
+<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+    screen -S portage -d -m bash -c "emerge app-editors/emacs-vcs --autounmask-write; echo '-5' | etc-update; emerge app-editors/emacs-vcs;"
 EOF
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgab85cff" class="outline-3">
-<h3 id="orgab85cff">Updating portage</h3>
-<div class="outline-text-3" id="text-orgab85cff">
+<div id="outline-container-org273580a" class="outline-2">
+<h2 id="org273580a">Set up emacs init.el</h2>
+<div class="outline-text-2" id="text-org273580a">
+<p>
+Community packages (marmalade) and
+productivity with literate programming (org)
+</p>
 <div class="org-src-container">
-<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-  emerge --oneshot portage
+<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+    echo "(require 'package)" &gt; ~/.emacs.d/init.el
+    echo "(add-to-list 'package-archives '(\"melpa\" . \"https://melpa.milkbox.net/packages/\") t)" &gt;&gt; ~/.emacs.d/init.el
+    echo "(add-to-list 'package-archives '(\"org\" . \"https://orgmode.org/elpa/\") t)" &gt;&gt; ~/.emacs.d/init.el
 EOF
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org7a42e5f" class="outline-3">
-<h3 id="org7a42e5f">Upgrading system</h3>
-<div class="outline-text-3" id="text-org7a42e5f">
+<div id="outline-container-orga9f312c" class="outline-2">
+<h2 id="orga9f312c">Install tor</h2>
+<div class="outline-text-2" id="text-orga9f312c">
 <div class="org-src-container">
-<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-  emerge -vuDN --with-bdeps y --keep-going world
+<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
+    screen -S portage -d -m bash -c "emerge net-vpn/tor --autounmask-write; echo '-5' | etc-update; emerge net-vpn/tor; rc-service tor start; rc-update add tor default;"
 EOF
 </pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgf401e88" class="outline-3">
-<h3 id="orgf401e88">Update configuration</h3>
-<div class="outline-text-3" id="text-orgf401e88">
-<div class="org-src-container">
-<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-  echo '-5' | etc-update
-EOF
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgaea51e1" class="outline-3">
-<h3 id="orgaea51e1">Clean dependencies</h3>
-<div class="outline-text-3" id="text-orgaea51e1">
-<div class="org-src-container">
-<pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-  emerge -v --depclean
-EOF
-</pre>
-</div>
 </div>
 </div>
 </div>
@@ -146,9 +98,9 @@ EOF
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2019-03-21</span>
-        <span title="last modification date" class="post-info">2019-03-21</span>
-        <span title="tags" class="post-info"><a href="/tags/how-to/">how-to</a></span>
+        <span title="post date" class="post-info">2019-05-21</span>
+        <span title="last modification date" class="post-info">2019-05-21</span>
+        <span title="tags" class="post-info"><a href="/tags/how-to/">how-to</a>, <a href="/tags/privacy/">privacy</a>, <a href="/tags/virtual-server/">virtual-server</a></span>
         <span title="author" class="post-info">jake</span>
       </div>
       <section>
@@ -156,8 +108,8 @@ EOF
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode";
-          var disqus_url = "https://prumnopytis.github.io/blog/2019/03/21/updating-a-fresh-gentoo-image-on-linode";
+          var disqus_identifier = "/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately";
           var disqus_shortname = 'prumnopytis-github-io';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {

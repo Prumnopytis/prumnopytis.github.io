@@ -4,16 +4,23 @@
     <title>Prumnopytis</title>
     <link>https://prumnopytis.github.io/</link>
     <description>Prumnopytis</description>
-    <pubDate>Tue, 21 May 2019 19:31:20 NZST</pubDate>
-    <lastBuildDate>Tue, 21 May 2019 19:31:20 NZST</lastBuildDate>
+    <pubDate>Wed, 22 May 2019 08:13:41 NZST</pubDate>
+    <lastBuildDate>Wed, 22 May 2019 08:13:41 NZST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>Emerge emacs live on linode and browse web privately</title>
       <link>https://prumnopytis.github.io/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately</link>
       <description><![CDATA[In which I set up emacs 27 on a fresh linode gentoo image, and also tor]]></description>
-      <pubDate>2019-05-21</pubDate>
+      <pubDate>2019-05-22</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately</guid>
+    </item>
+    <item>
+      <title>Sparrow</title>
+      <link>https://prumnopytis.github.io/blog/2019/01/11/sparrow</link>
+      <description><![CDATA[Photo of a sparrow, maybe.]]></description>
+      <pubDate>2019-05-22</pubDate>
+      <guid>https://prumnopytis.github.io/blog/2019/01/11/sparrow</guid>
     </item>
     <item>
       <title>Updating a fresh Gentoo image on linode</title>
@@ -70,13 +77,6 @@
       <description><![CDATA[A reminder on cool code folding for Python in Emacs]]></description>
       <pubDate>2019-01-27</pubDate>
       <guid>https://prumnopytis.github.io/blog/2019/01/27/emacs-indent-selection</guid>
-    </item>
-    <item>
-      <title>Dislike python</title>
-      <link>https://prumnopytis.github.io/blog/2019/01/27/dislike-python</link>
-      <description><![CDATA[Expressing my dislike of Python]]></description>
-      <pubDate>2019-01-27</pubDate>
-      <guid>https://prumnopytis.github.io/blog/2019/01/27/dislike-python</guid>
     </item>
   </channel>
 </rss>

@@ -34,39 +34,39 @@
 <div class="post">
 <h1>Emerge emacs live on linode and browse web privately</h1>
 
-<div id="outline-container-orgc9922c7" class="outline-2">
-<h2 id="orgc9922c7">Install screen</h2>
-<div class="outline-text-2" id="text-orgc9922c7">
+<div id="outline-container-org24ce18a" class="outline-2">
+<h2 id="org24ce18a">Install screen</h2>
+<div class="outline-text-2" id="text-org24ce18a">
 <p>
 Gnu screen is little and lets us run shell commands headlessly
 </p>
 <div class="org-src-container">
 <pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
- emerge app-misc/screen 
+    emerge app-misc/screen 
 EOF
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org2f3614b" class="outline-2">
-<h2 id="org2f3614b">Install emacs</h2>
-<div class="outline-text-2" id="text-org2f3614b">
+<div id="outline-container-org22f4c72" class="outline-2">
+<h2 id="org22f4c72">Install emacs</h2>
+<div class="outline-text-2" id="text-org22f4c72">
 <p>
 You should also use emacs
 </p>
 <div class="org-src-container">
 <pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-    screen -S portage -d -m bash -c "emerge app-editors/emacs-vcs --autounmask-write; echo '-5' | etc-update; emerge app-editors/emacs-vcs;"
+    screen -S portage -d -m bash -c "emerge app-editors/emacs-vcs --autounmask-write; echo '-5' | etc-update; USE="libxml2" emerge app-editors/emacs-vcs;"
 EOF
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org273580a" class="outline-2">
-<h2 id="org273580a">Set up emacs init.el</h2>
-<div class="outline-text-2" id="text-org273580a">
+<div id="outline-container-orge290938" class="outline-2">
+<h2 id="orge290938">Set up emacs init.el</h2>
+<div class="outline-text-2" id="text-orge290938">
 <p>
 Community packages (marmalade) and
 productivity with literate programming (org)
@@ -82,15 +82,31 @@ EOF
 </div>
 </div>
 
-<div id="outline-container-orga9f312c" class="outline-2">
-<h2 id="orga9f312c">Install tor</h2>
-<div class="outline-text-2" id="text-orga9f312c">
+<div id="outline-container-orgccd3183" class="outline-2">
+<h2 id="orgccd3183">Install tor</h2>
+<div class="outline-text-2" id="text-orgccd3183">
 <div class="org-src-container">
 <pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-    screen -S portage -d -m bash -c "emerge net-vpn/tor --autounmask-write; echo '-5' | etc-update; emerge net-vpn/tor; rc-service tor start; rc-update add tor default;"
+    screen -S portage -d -m bash -c "emerge net-vpn/tor --autounmask-write; echo '-5' | etc-update; emerge net-vpn/tor; rc-service tor start; rc-update add tor default; emerge net-proxy/torsocks;"
 EOF
 </pre>
 </div>
+</div>
+</div>
+<div id="outline-container-org76be763" class="outline-2">
+<h2 id="org76be763">Web browsing</h2>
+<div class="outline-text-2" id="text-org76be763">
+<div class="org-src-container">
+<pre class="src src-bash">torify emacs --daemon
+emacsclient -c
+</pre>
+</div>
+<p>
+followed by
+</p>
+<pre class="example">
+M-x eww am I using tor &lt;RET&gt;
+</pre>
 </div>
 </div>
 
@@ -99,7 +115,7 @@ EOF
     <div>
       <div class="post-meta">
         <span title="post date" class="post-info">2019-05-21</span>
-        <span title="last modification date" class="post-info">2019-05-21</span>
+        <span title="last modification date" class="post-info">2019-05-22</span>
         <span title="tags" class="post-info"><a href="/tags/how-to/">how-to</a>, <a href="/tags/privacy/">privacy</a>, <a href="/tags/virtual-server/">virtual-server</a></span>
         <span title="author" class="post-info">jake</span>
       </div>

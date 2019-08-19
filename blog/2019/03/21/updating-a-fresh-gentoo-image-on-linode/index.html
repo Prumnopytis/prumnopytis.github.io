@@ -34,44 +34,44 @@
 <div class="post">
 <h1>Updating a fresh Gentoo image on linode</h1>
 
-<div id="outline-container-orgc5b309d" class="outline-2">
-<h2 id="orgc5b309d">Description</h2>
-<div class="outline-text-2" id="text-orgc5b309d">
+<div id="outline-container-orgaeae867" class="outline-2">
+<h2 id="orgaeae867">Description</h2>
+<div class="outline-text-2" id="text-orgaeae867">
 <p>
 All the interactions, via shell ssh, with a linode I am setting up.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc556842" class="outline-2">
-<h2 id="orgc556842">Shell</h2>
-<div class="outline-text-2" id="text-orgc556842">
+<div id="outline-container-org774447a" class="outline-2">
+<h2 id="org774447a">Shell</h2>
+<div class="outline-text-2" id="text-org774447a">
 </div>
-<div id="outline-container-orga4aa41e" class="outline-3">
-<h3 id="orga4aa41e">Table of Contents</h3>
-<div class="outline-text-3" id="text-orga4aa41e">
+<div id="outline-container-orgc9d2a05" class="outline-3">
+<h3 id="orgc9d2a05">Table of Contents</h3>
+<div class="outline-text-3" id="text-orgc9d2a05">
 <ol class="org-ol">
-<li><a href="#orgd1188dc">First things first</a></li>
-<li><a href="#org9328bd5">Example shell working</a></li>
-<li><a href="#org15d1f52">Syncing portage</a></li>
-<li><a href="#orga05fba8">Updating portage</a></li>
-<li><a href="#org4f27b44">Upgrading system</a></li>
-<li><a href="#orga36a505">Update configuration</a></li>
-<li><a href="#org1b25e01">Clean dependencies</a></li>
+<li><a href="#orgdea5219">First things first</a></li>
+<li><a href="#orgabf3f4a">Example shell working</a></li>
+<li><a href="#orgc1dde43">Syncing portage</a></li>
+<li><a href="#org26589a0">Updating portage</a></li>
+<li><a href="#orge790880">Upgrading system</a></li>
+<li><a href="#org073fcd3">Update configuration</a></li>
+<li><a href="#orgf6481f0">Clean dependencies</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd1188dc" class="outline-3">
-<h3 id="orgd1188dc">First things first</h3>
-<div class="outline-text-3" id="text-orgd1188dc">
+<div id="outline-container-orgdea5219" class="outline-3">
+<h3 id="orgdea5219">First things first</h3>
+<div class="outline-text-3" id="text-orgdea5219">
 <ul class="org-ul">
 <li>Add a Linode with their Gentoo base image</li>
 <li>Add my public key, via Linode's web shell</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9328bd5" class="outline-3">
-<h3 id="org9328bd5">Example shell working</h3>
-<div class="outline-text-3" id="text-org9328bd5">
+<div id="outline-container-orgabf3f4a" class="outline-3">
+<h3 id="orgabf3f4a">Example shell working</h3>
+<div class="outline-text-3" id="text-orgabf3f4a">
 <div class="org-src-container">
 <pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt; EOF
   pwd
@@ -81,9 +81,9 @@ EOF
 </div>
 </div>
 
-<div id="outline-container-org15d1f52" class="outline-3">
-<h3 id="org15d1f52">Syncing portage</h3>
-<div class="outline-text-3" id="text-org15d1f52">
+<div id="outline-container-orgc1dde43" class="outline-3">
+<h3 id="orgc1dde43">Syncing portage</h3>
+<div class="outline-text-3" id="text-orgc1dde43">
 <div class="org-src-container">
 <pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
   emerge --sync
@@ -93,9 +93,9 @@ EOF
 </div>
 </div>
 
-<div id="outline-container-orga05fba8" class="outline-3">
-<h3 id="orga05fba8">Updating portage</h3>
-<div class="outline-text-3" id="text-orga05fba8">
+<div id="outline-container-org26589a0" class="outline-3">
+<h3 id="org26589a0">Updating portage</h3>
+<div class="outline-text-3" id="text-org26589a0">
 <div class="org-src-container">
 <pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
   emerge --oneshot portage
@@ -105,9 +105,9 @@ EOF
 </div>
 </div>
 
-<div id="outline-container-org4f27b44" class="outline-3">
-<h3 id="org4f27b44">Upgrading system</h3>
-<div class="outline-text-3" id="text-org4f27b44">
+<div id="outline-container-orge790880" class="outline-3">
+<h3 id="orge790880">Upgrading system</h3>
+<div class="outline-text-3" id="text-orge790880">
 <div class="org-src-container">
 <pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
   emerge -vuDN --with-bdeps y --keep-going world
@@ -117,9 +117,9 @@ EOF
 </div>
 </div>
 
-<div id="outline-container-orga36a505" class="outline-3">
-<h3 id="orga36a505">Update configuration</h3>
-<div class="outline-text-3" id="text-orga36a505">
+<div id="outline-container-org073fcd3" class="outline-3">
+<h3 id="org073fcd3">Update configuration</h3>
+<div class="outline-text-3" id="text-org073fcd3">
 <div class="org-src-container">
 <pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
   echo '-5' | etc-update
@@ -129,9 +129,9 @@ EOF
 </div>
 </div>
 
-<div id="outline-container-org1b25e01" class="outline-3">
-<h3 id="org1b25e01">Clean dependencies</h3>
-<div class="outline-text-3" id="text-org1b25e01">
+<div id="outline-container-orgf6481f0" class="outline-3">
+<h3 id="orgf6481f0">Clean dependencies</h3>
+<div class="outline-text-3" id="text-orgf6481f0">
 <div class="org-src-container">
 <pre class="src src-shell">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
   emerge -v --depclean

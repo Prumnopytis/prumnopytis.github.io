@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Emerge emacs live on linode and browse web privately - Prumnopytis</title>
+    <title>A demo blog post to show malithi - Prumnopytis</title>
     <meta charset="utf-8" />
     <meta name="author" content="jake" />
-    <meta name="description" content="In which I set up emacs 27 on a fresh linode gentoo image, and also tor" />
-    <meta name="keywords" content="emacs, org-mode, gentoo, tor, linux, sysadmin, ssh, linode, setup, portage, emerge" />
+    <meta name="description" content="An introductory post" />
+    <meta name="keywords" content="hello-world" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -32,81 +32,48 @@
 
 <div>
 <div class="post">
-<h1>Emerge emacs live on linode and browse web privately</h1>
+<h1>A demo blog post to show malithi</h1>
+<div id="outline-container-orgfacb8b5" class="outline-2">
+<h2 id="orgfacb8b5">This is a heading</h2>
+<div class="outline-text-2" id="text-orgfacb8b5">
+</div>
+<div id="outline-container-orge4717b2" class="outline-3">
+<h3 id="orge4717b2">This is a smaller heading</h3>
+<div class="outline-text-3" id="text-orge4717b2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<div id="outline-container-orgc407e3c" class="outline-2">
-<h2 id="orgc407e3c">Install screen</h2>
-<div class="outline-text-2" id="text-orgc407e3c">
-<p>
-Gnu screen is little and lets us run shell commands headlessly
-</p>
-<div class="org-src-container">
-<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-    emerge app-misc/screen 
-EOF
-</pre>
-</div>
-</div>
-</div>
 
-<div id="outline-container-orgad26f9e" class="outline-2">
-<h2 id="orgad26f9e">Install emacs</h2>
-<div class="outline-text-2" id="text-orgad26f9e">
-<p>
-You should also use emacs
-</p>
-<div class="org-src-container">
-<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-    screen -S portage -d -m bash -c "emerge app-editors/emacs-vcs --autounmask-write; echo '-5' | etc-update; USE="libxml2" emerge app-editors/emacs-vcs;"
-EOF
-</pre>
-</div>
-</div>
-</div>
+<colgroup>
+<col  class="org-left" />
 
-<div id="outline-container-orgceb8ac9" class="outline-2">
-<h2 id="orgceb8ac9">Set up emacs init.el</h2>
-<div class="outline-text-2" id="text-orgceb8ac9">
-<p>
-Community packages (marmalade) and
-productivity with literate programming (org)
-</p>
-<div class="org-src-container">
-<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-    echo "(require 'package)" &gt; ~/.emacs.d/init.el
-    echo "(add-to-list 'package-archives '(\"melpa\" . \"https://melpa.milkbox.net/packages/\") t)" &gt;&gt; ~/.emacs.d/init.el
-    echo "(add-to-list 'package-archives '(\"org\" . \"https://orgmode.org/elpa/\") t)" &gt;&gt; ~/.emacs.d/init.el
-EOF
-</pre>
-</div>
-</div>
-</div>
+<col  class="org-left" />
 
-<div id="outline-container-org19e5bc3" class="outline-2">
-<h2 id="org19e5bc3">Install tor</h2>
-<div class="outline-text-2" id="text-org19e5bc3">
-<div class="org-src-container">
-<pre class="src src-bash">ssh root@XXX.XXX.XX.XXX &lt;&lt;EOF
-    screen -S portage -d -m bash -c "emerge net-vpn/tor --autounmask-write; echo '-5' | etc-update; emerge net-vpn/tor; rc-service tor start; rc-update add tor default; emerge net-proxy/torsocks;"
-EOF
-</pre>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">this</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">is</td>
+<td class="org-left">a</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">table</td>
+<td class="org-left">for</td>
+<td class="org-left">example</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
-</div>
-<div id="outline-container-org8b86cb6" class="outline-2">
-<h2 id="org8b86cb6">Web browsing</h2>
-<div class="outline-text-2" id="text-org8b86cb6">
-<div class="org-src-container">
-<pre class="src src-bash">torify emacs --daemon
-emacsclient -c
-</pre>
-</div>
-<p>
-followed by
-</p>
-<pre class="example">
-M-x eww am I using tor &lt;RET&gt;
-</pre>
+<div id="outline-container-orge965f29" class="outline-3">
+<h3 id="orge965f29">Another heading</h3>
 </div>
 </div>
 
@@ -114,9 +81,9 @@ M-x eww am I using tor &lt;RET&gt;
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2019-05-21</span>
-        <span title="last modification date" class="post-info">2019-05-22</span>
-        <span title="tags" class="post-info"><a href="/tags/how-to/">how-to</a>, <a href="/tags/privacy/">privacy</a>, <a href="/tags/virtual-server/">virtual-server</a></span>
+        <span title="post date" class="post-info">2019-08-19</span>
+        <span title="last modification date" class="post-info">2019-08-19</span>
+        <span title="tags" class="post-info"><a href="/tags/delete/">delete</a></span>
         <span title="author" class="post-info">jake</span>
       </div>
       <section>
@@ -124,8 +91,8 @@ M-x eww am I using tor &lt;RET&gt;
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately";
-          var disqus_url = "https://prumnopytis.github.io/blog/2019/05/21/emerge-emacs-live-on-linode-and-browse-web-privately";
+          var disqus_identifier = "/blog/2019/08/19/a-demo-blog-post-to-show-malithi";
+          var disqus_url = "https://prumnopytis.github.io/blog/2019/08/19/a-demo-blog-post-to-show-malithi";
           var disqus_shortname = 'prumnopytis-github-io';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {
